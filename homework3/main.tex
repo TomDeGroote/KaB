@@ -1,0 +1,37 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage[colorlinks, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
+\usepackage{geometry}
+\usepackage{subfiles}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{url}
+
+\begin{document}
+\setlength\parindent{0pt}
+
+\input{titlepage}
+
+\section{Research Question}
+
+One of the major issues that lead to the vote for Brexit, is the rising amount of immigrants entering the UK each year. The \textbf{Vote Leave campaign} says: ``A vote for leave will be a vote to cut immigration''.\footnote{\url{https://www.theguardian.com/politics/2016/jun/27/eu-referendum-reality-check-leave-campaign-promises}} We wish to investigate whether this argument is well-founded or not. We approach this problem by analyzing the following:
+\begin{itemize}
+	\item Compare yearly amount of immigrants in the UK with other countries in the EU.
+	\item Compare yearly crime rate in the UK with other countries. Research if there's a correlation between amount of immigrants and the crime rate (in particular categories).
+\end{itemize}
+
+\section{Description Vocabularies}
+
+
+
+\section{Expected Issues}
+
+\begin{enumerate}
+	\item \textbf{Missing data:} When there's not enough data, we cannot perform a (meaningful) statistical research. For that reason, we first explored some possible options. Analyzing the available data first allows us to gain insight in choosing a good research question.
+	\item \textbf{Inconsistent data:} Data from different sources may differ. We've already found some inconsistency between data from \textit{Eurostat}\footnote{\url{http://ec.europa.eu/eurostat}} and the \textit{UK government}\footnote{\url{https://data.gov.uk/}}, regarding the amount of asylum seekers each year. Our current plan is to find more databases (ie. \textit{DBpedia}) to compare with. This may provide some insight on which database is `more likely' to be correct. If the data is relatively the same, then we could use the mean to provide a compromise.
+	\item \textbf{Bad data:} Some outliers in the data that are either highly unlikely or impossible may be truncated from the dataset. Data that's badly formatted may in some cases be restored to it's obviously intended value, or if it cannot be restored then it will be removed.
+\end{enumerate}
+
+\end{document}
