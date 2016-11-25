@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+import os
 
 raw_csv_directory = "../raw_csv_storage"
 preprocessed_csv_directory = "../preprocessed_csv_storage"
@@ -21,8 +22,17 @@ def crime():
     write_csv(data, filename)
 
 
+def general_processing():
+    for file in os.listdir(raw_csv_directory):
+        if file.endswith(".csv"):
+            data = load_csv(file)
+            if 'Value' in data:
+                data['Value'] = data['Value'].apply(format_number)
+            write_csv(data, file)
+
+
 def format_number(numstring):
-    return re.sub("[^0-9.]", "", numstring)
+    return re.sub("[^0-9.]", "", str(numstring))
 
 
 def load_csv(filename):
@@ -40,8 +50,9 @@ def write_csv(data, filename):
 
 
 def perform_preprocessing():
-    crime()
-    first_time_asylum_applicants()
+    general_processing()
+    # crime()
+    # first_time_asylum_applicants()
 
 
 
