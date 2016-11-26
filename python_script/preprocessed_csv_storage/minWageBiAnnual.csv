@@ -1,0 +1,815 @@
+TIME,GEO,CURRENCY,Value,Flag and Footnotes
+2006S1,Belgium,Euro,1234.00,
+2006S1,Bulgaria,Euro,81.79,
+2006S1,Czech Republic,Euro,261.03,
+2006S1,Denmark,Euro,,z
+2006S1,Germany (until 1990 former territory of the FRG),Euro,,z
+2006S1,Estonia,Euro,191.73,
+2006S1,Ireland,Euro,1292.85,
+2006S1,Greece,Euro,709.71,
+2006S1,Spain,Euro,631.05,
+2006S1,France,Euro,1217.88,
+2006S1,Croatia,Euro,,z
+2006S1,Italy,Euro,,z
+2006S1,Cyprus,Euro,,z
+2006S1,Latvia,Euro,129.27,
+2006S1,Lithuania,Euro,159.29,
+2006S1,Luxembourg,Euro,1503.42,
+2006S1,Hungary,Euro,247.16,
+2006S1,Malta,Euro,584.23,
+2006S1,Netherlands,Euro,1272.60,
+2006S1,Austria,Euro,,z
+2006S1,Poland,Euro,232.90,
+2006S1,Portugal,Euro,449.98,
+2006S1,Romania,Euro,89.67,
+2006S1,Slovenia,Euro,511.90,
+2006S1,Slovakia,Euro,182.15,
+2006S1,Finland,Euro,,z
+2006S1,Sweden,Euro,,z
+2006S1,United Kingdom,Euro,1212.61,
+2006S1,Iceland,Euro,,z
+2006S1,Norway,Euro,,z
+2006S1,Switzerland,Euro,,z
+2006S1,Montenegro,Euro,,
+2006S1,"Former Yugoslav Republic of Macedonia, the",Euro,,z
+2006S1,Albania,Euro,,
+2006S1,Serbia,Euro,,
+2006S1,Turkey,Euro,333.46,
+2006S1,United States,Euro,756.69,
+2006S2,Belgium,Euro,1234.00,
+2006S2,Bulgaria,Euro,81.81,
+2006S2,Czech Republic,Euro,279.19,
+2006S2,Denmark,Euro,,z
+2006S2,Germany (until 1990 former territory of the FRG),Euro,,z
+2006S2,Estonia,Euro,191.73,
+2006S2,Ireland,Euro,1292.85,
+2006S2,Greece,Euro,709.71,
+2006S2,Spain,Euro,631.05,
+2006S2,France,Euro,1254.28,
+2006S2,Croatia,Euro,,z
+2006S2,Italy,Euro,,z
+2006S2,Cyprus,Euro,,z
+2006S2,Latvia,Euro,129.29,
+2006S2,Lithuania,Euro,173.77,
+2006S2,Luxembourg,Euro,1503.42,
+2006S2,Hungary,Euro,220.58,
+2006S2,Malta,Euro,584.23,
+2006S2,Netherlands,Euro,1284.60,
+2006S2,Austria,Euro,,z
+2006S2,Poland,Euro,221.72,
+2006S2,Portugal,Euro,449.98,
+2006S2,Romania,Euro,92.43,
+2006S2,Slovenia,Euro,511.62,
+2006S2,Slovakia,Euro,179.92,
+2006S2,Finland,Euro,,z
+2006S2,Sweden,Euro,,z
+2006S2,United Kingdom,Euro,1200.69,
+2006S2,Iceland,Euro,,z
+2006S2,Norway,Euro,,z
+2006S2,Switzerland,Euro,,z
+2006S2,Montenegro,Euro,,
+2006S2,"Former Yugoslav Republic of Macedonia, the",Euro,,z
+2006S2,Albania,Euro,,
+2006S2,Serbia,Euro,,
+2006S2,Turkey,Euro,264.51,
+2006S2,United States,Euro,702.17,
+2007S1,Belgium,Euro,1259.00,
+2007S1,Bulgaria,Euro,92.03,
+2007S1,Czech Republic,Euro,291.07,
+2007S1,Denmark,Euro,,z
+2007S1,Germany (until 1990 former territory of the FRG),Euro,,z
+2007S1,Estonia,Euro,230.08,
+2007S1,Ireland,Euro,1402.70,
+2007S1,Greece,Euro,730.30,
+2007S1,Spain,Euro,665.70,
+2007S1,France,Euro,1254.28,
+2007S1,Croatia,Euro,,z
+2007S1,Italy,Euro,,z
+2007S1,Cyprus,Euro,,z
+2007S1,Latvia,Euro,172.12,
+2007S1,Lithuania,Euro,173.77,
+2007S1,Luxembourg,Euro,1570.28,
+2007S1,Hungary,Euro,260.16,
+2007S1,Malta,Euro,601.91,
+2007S1,Netherlands,Euro,1300.80,
+2007S1,Austria,Euro,,z
+2007S1,Poland,Euro,244.32,
+2007S1,Portugal,Euro,470.17,
+2007S1,Romania,Euro,115.27,
+2007S1,Slovenia,Euro,521.80,
+2007S1,Slovakia,Euro,220.71,
+2007S1,Finland,Euro,,z
+2007S1,Sweden,Euro,,z
+2007S1,United Kingdom,Euro,1314.97,
+2007S1,Iceland,Euro,,z
+2007S1,Norway,Euro,,z
+2007S1,Switzerland,Euro,,z
+2007S1,Montenegro,Euro,,
+2007S1,"Former Yugoslav Republic of Macedonia, the",Euro,,z
+2007S1,Albania,Euro,,
+2007S1,Serbia,Euro,,
+2007S1,Turkey,Euro,301.77,
+2007S1,United States,Euro,677.81,
+2007S2,Belgium,Euro,1283.00,
+2007S2,Bulgaria,Euro,92.03,
+2007S2,Czech Republic,Euro,278.57,
+2007S2,Denmark,Euro,,z
+2007S2,Germany (until 1990 former territory of the FRG),Euro,,z
+2007S2,Estonia,Euro,230.08,
+2007S2,Ireland,Euro,1461.85,
+2007S2,Greece,Euro,767.55,
+2007S2,Spain,Euro,665.70,
+2007S2,France,Euro,1280.07,
+2007S2,Croatia,Euro,,z
+2007S2,Italy,Euro,,z
+2007S2,Cyprus,Euro,,z
+2007S2,Latvia,Euro,172.34,
+2007S2,Lithuania,Euro,202.73,
+2007S2,Luxembourg,Euro,1570.28,
+2007S2,Hungary,Euro,266.10,
+2007S2,Malta,Euro,601.91,
+2007S2,Netherlands,Euro,1317.00,
+2007S2,Austria,Euro,,z
+2007S2,Poland,Euro,248.43,
+2007S2,Portugal,Euro,470.17,
+2007S2,Romania,Euro,124.44,
+2007S2,Slovenia,Euro,521.80,
+2007S2,Slovakia,Euro,225.96,
+2007S2,Finland,Euro,,z
+2007S2,Sweden,Euro,,z
+2007S2,United Kingdom,Euro,1310.09,
+2007S2,Iceland,Euro,,z
+2007S2,Norway,Euro,,z
+2007S2,Switzerland,Euro,,z
+2007S2,Montenegro,Euro,,
+2007S2,"Former Yugoslav Republic of Macedonia, the",Euro,,z
+2007S2,Albania,Euro,,
+2007S2,Serbia,Euro,,
+2007S2,Turkey,Euro,329.76,
+2007S2,United States,Euro,660.99,
+2008S1,Belgium,Euro,1309.60,
+2008S1,Bulgaria,Euro,112.49,
+2008S1,Czech Republic,Euro,300.44,
+2008S1,Denmark,Euro,,z
+2008S1,Germany (until 1990 former territory of the FRG),Euro,,z
+2008S1,Estonia,Euro,278.02,
+2008S1,Ireland,Euro,1461.85,
+2008S1,Greece,Euro,794.02,
+2008S1,Spain,Euro,700.00,
+2008S1,France,Euro,1280.07,
+2008S1,Croatia,Euro,,z
+2008S1,Italy,Euro,,z
+2008S1,Cyprus,Euro,,z
+2008S1,Latvia,Euro,229.75,
+2008S1,Lithuania,Euro,231.70,
+2008S1,Luxembourg,Euro,1570.28,
+2008S1,Hungary,Euro,271.94,
+2008S1,Malta,Euro,617.21,
+2008S1,Netherlands,Euro,1335.00,
+2008S1,Austria,Euro,,z
+2008S1,Poland,Euro,313.34,
+2008S1,Portugal,Euro,497.00,
+2008S1,Romania,Euro,138.59,
+2008S1,Slovenia,Euro,538.53,
+2008S1,Slovakia,Euro,241.19,
+2008S1,Finland,Euro,,z
+2008S1,Sweden,Euro,,z
+2008S1,United Kingdom,Euro,1242.24,
+2008S1,Iceland,Euro,,z
+2008S1,Norway,Euro,,z
+2008S1,Switzerland,Euro,,z
+2008S1,Montenegro,Euro,,
+2008S1,"Former Yugoslav Republic of Macedonia, the",Euro,,z
+2008S1,Albania,Euro,,
+2008S1,Serbia,Euro,,
+2008S1,Turkey,Euro,354.34,
+2008S1,United States,Euro,688.81,
+2008S2,Belgium,Euro,1335.80,
+2008S2,Bulgaria,Euro,112.49,
+2008S2,Czech Republic,Euro,334.83,
+2008S2,Denmark,Euro,,z
+2008S2,Germany (until 1990 former territory of the FRG),Euro,,z
+2008S2,Estonia,Euro,278.02,
+2008S2,Ireland,Euro,1461.85,
+2008S2,Greece,Euro,794.02,
+2008S2,Spain,Euro,700.00,
+2008S2,France,Euro,1321.02,
+2008S2,Croatia,Euro,379.60,
+2008S2,Italy,Euro,,z
+2008S2,Cyprus,Euro,,z
+2008S2,Latvia,Euro,227.05,
+2008S2,Lithuania,Euro,231.70,
+2008S2,Luxembourg,Euro,1609.53,
+2008S2,Hungary,Euro,293.08,
+2008S2,Malta,Euro,617.21,
+2008S2,Netherlands,Euro,1356.60,
+2008S2,Austria,Euro,,z
+2008S2,Poland,Euro,335.99,
+2008S2,Portugal,Euro,497.00,
+2008S2,Romania,Euro,137.31,
+2008S2,Slovenia,Euro,566.50,
+2008S2,Slovakia,Euro,268.17,
+2008S2,Finland,Euro,,z
+2008S2,Sweden,Euro,,z
+2008S2,United Kingdom,Euro,1149.89,
+2008S2,Iceland,Euro,,z
+2008S2,Norway,Euro,,z
+2008S2,Switzerland,Euro,,z
+2008S2,Montenegro,Euro,,
+2008S2,"Former Yugoslav Republic of Macedonia, the",Euro,,z
+2008S2,Albania,Euro,,
+2008S2,Serbia,Euro,,
+2008S2,Turkey,Euro,330.54,
+2008S2,United States,Euro,643.24,
+2009S1,Belgium,Euro,1387.50,
+2009S1,Bulgaria,Euro,122.71,
+2009S1,Czech Republic,Euro,297.67,
+2009S1,Denmark,Euro,,z
+2009S1,Germany (until 1990 former territory of the FRG),Euro,,z
+2009S1,Estonia,Euro,278.02,
+2009S1,Ireland,Euro,1461.85,
+2009S1,Greece,Euro,817.83,
+2009S1,Spain,Euro,728.00,
+2009S1,France,Euro,1321.02,
+2009S1,Croatia,Euro,373.46,
+2009S1,Italy,Euro,,z
+2009S1,Cyprus,Euro,,z
+2009S1,Latvia,Euro,254.13,
+2009S1,Lithuania,Euro,231.70,
+2009S1,Luxembourg,Euro,1641.74,
+2009S1,Hungary,Euro,268.09,
+2009S1,Malta,Euro,634.88,
+2009S1,Netherlands,Euro,1381.20,
+2009S1,Austria,Euro,,z
+2009S1,Poland,Euro,307.21,
+2009S1,Portugal,Euro,525.00,
+2009S1,Romania,Euro,149.16,
+2009S1,Slovenia,Euro,589.19,
+2009S1,Slovakia,Euro,295.50,
+2009S1,Finland,Euro,,z
+2009S1,Sweden,Euro,,z
+2009S1,United Kingdom,Euro,995.28,
+2009S1,Iceland,Euro,,z
+2009S1,Norway,Euro,,z
+2009S1,Switzerland,Euro,,z
+2009S1,Montenegro,Euro,,
+2009S1,"Former Yugoslav Republic of Macedonia, the",Euro,,z
+2009S1,Albania,Euro,,
+2009S1,Serbia,Euro,,
+2009S1,Turkey,Euro,309.94,
+2009S1,United States,Euro,815.79,
+2009S2,Belgium,Euro,1387.50,
+2009S2,Bulgaria,Euro,122.71,
+2009S2,Czech Republic,Euro,309.10,
+2009S2,Denmark,Euro,,z
+2009S2,Germany (until 1990 former territory of the FRG),Euro,,z
+2009S2,Estonia,Euro,278.02,
+2009S2,Ireland,Euro,1461.85,
+2009S2,Greece,Euro,862.82,
+2009S2,Spain,Euro,728.00,
+2009S2,France,Euro,1337.70,
+2009S2,Croatia,Euro,386.91,
+2009S2,Italy,Euro,,z
+2009S2,Cyprus,Euro,,z
+2009S2,Latvia,Euro,255.83,
+2009S2,Lithuania,Euro,231.70,
+2009S2,Luxembourg,Euro,1682.76,
+2009S2,Hungary,Euro,263.30,
+2009S2,Malta,Euro,634.88,
+2009S2,Netherlands,Euro,1398.60,
+2009S2,Austria,Euro,,z
+2009S2,Poland,Euro,286.61,
+2009S2,Portugal,Euro,525.00,
+2009S2,Romania,Euro,142.61,
+2009S2,Slovenia,Euro,589.19,
+2009S2,Slovakia,Euro,295.50,
+2009S2,Finland,Euro,,z
+2009S2,Sweden,Euro,,z
+2009S2,United Kingdom,Euro,1112.55,
+2009S2,Iceland,Euro,,z
+2009S2,Norway,Euro,,z
+2009S2,Switzerland,Euro,,z
+2009S2,Montenegro,Euro,,
+2009S2,"Former Yugoslav Republic of Macedonia, the",Euro,,z
+2009S2,Albania,Euro,,
+2009S2,Serbia,Euro,,
+2009S2,Turkey,Euro,320.81,
+2009S2,United States,Euro,803.26,
+2010S1,Belgium,Euro,1387.50,
+2010S1,Bulgaria,Euro,122.71,
+2010S1,Czech Republic,Euro,302.19,
+2010S1,Denmark,Euro,,z
+2010S1,Germany (until 1990 former territory of the FRG),Euro,,z
+2010S1,Estonia,Euro,278.02,
+2010S1,Ireland,Euro,1461.85,
+2010S1,Greece,Euro,862.82,
+2010S1,Spain,Euro,738.85,
+2010S1,France,Euro,1343.77,
+2010S1,Croatia,Euro,385.48,
+2010S1,Italy,Euro,,z
+2010S1,Cyprus,Euro,,z
+2010S1,Latvia,Euro,253.77,
+2010S1,Lithuania,Euro,231.70,
+2010S1,Luxembourg,Euro,1682.76,
+2010S1,Hungary,Euro,271.80,
+2010S1,Malta,Euro,659.92,
+2010S1,Netherlands,Euro,1407.60,
+2010S1,Austria,Euro,,z
+2010S1,Poland,Euro,320.87,
+2010S1,Portugal,Euro,554.17,
+2010S1,Romania,Euro,141.63,
+2010S1,Slovenia,Euro,597.43,
+2010S1,Slovakia,Euro,307.70,
+2010S1,Finland,Euro,,z
+2010S1,Sweden,Euro,,z
+2010S1,United Kingdom,Euro,1076.46,
+2010S1,Iceland,Euro,,z
+2010S1,Norway,Euro,,z
+2010S1,Switzerland,Euro,,z
+2010S1,Montenegro,Euro,,
+2010S1,"Former Yugoslav Republic of Macedonia, the",Euro,,z
+2010S1,Albania,Euro,,
+2010S1,Serbia,Euro,,
+2010S1,Turkey,Euro,338.33,
+2010S1,United States,Euro,872.32,
+2010S2,Belgium,Euro,1387.50,
+2010S2,Bulgaria,Euro,122.71,
+2010S2,Czech Republic,Euro,311.39,
+2010S2,Denmark,Euro,,z
+2010S2,Germany (until 1990 former territory of the FRG),Euro,,z
+2010S2,Estonia,Euro,278.02,
+2010S2,Ireland,Euro,1461.85,
+2010S2,Greece,Euro,862.82,
+2010S2,Spain,Euro,738.85,
+2010S2,France,Euro,1343.77,
+2010S2,Croatia,Euro,390.94,
+2010S2,Italy,Euro,,z
+2010S2,Cyprus,Euro,,z
+2010S2,Latvia,Euro,253.77,
+2010S2,Lithuania,Euro,231.70,
+2010S2,Luxembourg,Euro,1724.81,
+2010S2,Hungary,Euro,256.99,
+2010S2,Malta,Euro,659.92,
+2010S2,Netherlands,Euro,1416.00,
+2010S2,Austria,Euro,,z
+2010S2,Poland,Euro,317.58,
+2010S2,Portugal,Euro,554.17,
+2010S2,Romania,Euro,137.30,
+2010S2,Slovenia,Euro,734.15,
+2010S2,Slovakia,Euro,307.70,
+2010S2,Finland,Euro,,z
+2010S2,Sweden,Euro,,z
+2010S2,United Kingdom,Euro,1169.49,
+2010S2,Iceland,Euro,,z
+2010S2,Norway,Euro,,z
+2010S2,Switzerland,Euro,,z
+2010S2,Montenegro,Euro,,
+2010S2,"Former Yugoslav Republic of Macedonia, the",Euro,,z
+2010S2,Albania,Euro,,
+2010S2,Serbia,Euro,,
+2010S2,Turkey,Euro,392.01,
+2010S2,United States,Euro,1024.09,
+2011S1,Belgium,Euro,1415.24,
+2011S1,Bulgaria,Euro,122.71,
+2011S1,Czech Republic,Euro,319.22,
+2011S1,Denmark,Euro,,z
+2011S1,Germany (until 1990 former territory of the FRG),Euro,,z
+2011S1,Estonia,Euro,278.02,
+2011S1,Ireland,Euro,1461.85,
+2011S1,Greece,Euro,862.82,
+2011S1,Spain,Euro,748.30,
+2011S1,France,Euro,1365.00,
+2011S1,Croatia,Euro,381.15,
+2011S1,Italy,Euro,,z
+2011S1,Cyprus,Euro,,z
+2011S1,Latvia,Euro,281.93,
+2011S1,Lithuania,Euro,231.70,
+2011S1,Luxembourg,Euro,1757.56,
+2011S1,Hungary,Euro,280.63,
+2011S1,Malta,Euro,664.95,
+2011S1,Netherlands,Euro,1424.40,
+2011S1,Austria,Euro,,z
+2011S1,Poland,Euro,348.68,
+2011S1,Portugal,Euro,565.83,
+2011S1,Romania,Euro,157.20,
+2011S1,Slovenia,Euro,748.10,
+2011S1,Slovakia,Euro,317.00,
+2011S1,Finland,Euro,,z
+2011S1,Sweden,Euro,,z
+2011S1,United Kingdom,Euro,1136.22,
+2011S1,Iceland,Euro,,z
+2011S1,Norway,Euro,,z
+2011S1,Switzerland,Euro,,z
+2011S1,Montenegro,Euro,,
+2011S1,"Former Yugoslav Republic of Macedonia, the",Euro,,z
+2011S1,Albania,Euro,,
+2011S1,Serbia,Euro,,
+2011S1,Turkey,Euro,384.89,
+2011S1,United States,Euro,940.48,
+2011S2,Belgium,Euro,1443.54,
+2011S2,Bulgaria,Euro,122.71,
+2011S2,Czech Republic,Euro,328.61,
+2011S2,Denmark,Euro,,z
+2011S2,Germany (until 1990 former territory of the FRG),Euro,,z
+2011S2,Estonia,Euro,278.02,
+2011S2,Ireland,Euro,1461.85,
+2011S2,Greece,Euro,876.62,
+2011S2,Spain,Euro,748.30,
+2011S2,France,Euro,1365.00,
+2011S2,Croatia,Euro,380.18,
+2011S2,Italy,Euro,,z
+2011S2,Cyprus,Euro,,z
+2011S2,Latvia,Euro,281.97,
+2011S2,Lithuania,Euro,231.70,
+2011S2,Luxembourg,Euro,1757.56,
+2011S2,Hungary,Euro,293.11,
+2011S2,Malta,Euro,664.95,
+2011S2,Netherlands,Euro,1435.20,
+2011S2,Austria,Euro,,z
+2011S2,Poland,Euro,347.34,
+2011S2,Portugal,Euro,565.83,
+2011S2,Romania,Euro,157.89,
+2011S2,Slovenia,Euro,748.10,
+2011S2,Slovakia,Euro,317.00,
+2011S2,Finland,Euro,,z
+2011S2,Sweden,Euro,,z
+2011S2,United Kingdom,Euro,1083.60,
+2011S2,Iceland,Euro,,z
+2011S2,Norway,Euro,,z
+2011S2,Switzerland,Euro,,z
+2011S2,Montenegro,Euro,,
+2011S2,"Former Yugoslav Republic of Macedonia, the",Euro,,z
+2011S2,Albania,Euro,,
+2011S2,Serbia,Euro,,
+2011S2,Turkey,Euro,356.17,
+2011S2,United States,Euro,869.48,
+2012S1,Belgium,Euro,1443.54,
+2012S1,Bulgaria,Euro,138.05,
+2012S1,Czech Republic,Euro,310.23,
+2012S1,Denmark,Euro,,z
+2012S1,Germany (until 1990 former territory of the FRG),Euro,,z
+2012S1,Estonia,Euro,290.00,
+2012S1,Ireland,Euro,1461.85,
+2012S1,Greece,Euro,876.62,
+2012S1,Spain,Euro,748.30,
+2012S1,France,Euro,1398.37,
+2012S1,Croatia,Euro,373.36,
+2012S1,Italy,Euro,,z
+2012S1,Cyprus,Euro,,z
+2012S1,Latvia,Euro,285.92,
+2012S1,Lithuania,Euro,231.70,
+2012S1,Luxembourg,Euro,1801.49,
+2012S1,Hungary,Euro,295.63,
+2012S1,Malta,Euro,685.14,
+2012S1,Netherlands,Euro,1446.60,
+2012S1,Austria,Euro,,z
+2012S1,Poland,Euro,336.47,
+2012S1,Portugal,Euro,565.83,
+2012S1,Romania,Euro,161.91,
+2012S1,Slovenia,Euro,763.06,
+2012S1,Slovakia,Euro,327.00,
+2012S1,Finland,Euro,,z
+2012S1,Sweden,Euro,,z
+2012S1,United Kingdom,Euro,1201.96,
+2012S1,Iceland,Euro,,z
+2012S1,Norway,Euro,,z
+2012S1,Switzerland,Euro,,z
+2012S1,Montenegro,Euro,,
+2012S1,"Former Yugoslav Republic of Macedonia, the",Euro,,
+2012S1,Albania,Euro,,
+2012S1,Serbia,Euro,,
+2012S1,Turkey,Euro,362.84,
+2012S1,United States,Euro,971.22,
+2012S2,Belgium,Euro,1472.42,
+2012S2,Bulgaria,Euro,148.28,
+2012S2,Czech Republic,Euro,312.01,
+2012S2,Denmark,Euro,,z
+2012S2,Germany (until 1990 former territory of the FRG),Euro,,z
+2012S2,Estonia,Euro,290.00,
+2012S2,Ireland,Euro,1461.85,
+2012S2,Greece,Euro,683.76,
+2012S2,Spain,Euro,748.30,
+2012S2,France,Euro,1425.67,
+2012S2,Croatia,Euro,374.31,
+2012S2,Italy,Euro,,z
+2012S2,Cyprus,Euro,,z
+2012S2,Latvia,Euro,287.07,
+2012S2,Lithuania,Euro,231.70,
+2012S2,Luxembourg,Euro,1801.49,
+2012S2,Hungary,Euro,323.17,
+2012S2,Malta,Euro,685.14,
+2012S2,Netherlands,Euro,1456.20,
+2012S2,Austria,Euro,,z
+2012S2,Poland,Euro,353.04,
+2012S2,Portugal,Euro,565.83,
+2012S2,Romania,Euro,157.26,
+2012S2,Slovenia,Euro,763.06,
+2012S2,Slovakia,Euro,327.00,
+2012S2,Finland,Euro,,z
+2012S2,Sweden,Euro,,z
+2012S2,United Kingdom,Euro,1244.42,
+2012S2,Iceland,Euro,,z
+2012S2,Norway,Euro,,z
+2012S2,Switzerland,Euro,,z
+2012S2,Montenegro,Euro,,
+2012S2,"Former Yugoslav Republic of Macedonia, the",Euro,,
+2012S2,Albania,Euro,,
+2012S2,Serbia,Euro,234.90,
+2012S2,Turkey,Euro,411.89,
+2012S2,United States,Euro,998.15,
+2013S1,Belgium,Euro,1501.82,
+2013S1,Bulgaria,Euro,158.50,
+2013S1,Czech Republic,Euro,318.08,
+2013S1,Denmark,Euro,,z
+2013S1,Germany (until 1990 former territory of the FRG),Euro,,z
+2013S1,Estonia,Euro,320.00,
+2013S1,Ireland,Euro,1461.85,
+2013S1,Greece,Euro,683.76,
+2013S1,Spain,Euro,752.85,
+2013S1,France,Euro,1430.22,
+2013S1,Croatia,Euro,372.35,
+2013S1,Italy,Euro,,z
+2013S1,Cyprus,Euro,,z
+2013S1,Latvia,Euro,286.66,
+2013S1,Lithuania,Euro,289.62,
+2013S1,Luxembourg,Euro,1874.19,
+2013S1,Hungary,Euro,335.27,
+2013S1,Malta,Euro,702.82,
+2013S1,Netherlands,Euro,1469.40,
+2013S1,Austria,Euro,,z
+2013S1,Poland,Euro,392.73,
+2013S1,Portugal,Euro,565.83,
+2013S1,Romania,Euro,157.50,
+2013S1,Slovenia,Euro,783.66,
+2013S1,Slovakia,Euro,337.70,
+2013S1,Finland,Euro,,z
+2013S1,Sweden,Euro,,z
+2013S1,United Kingdom,Euro,1249.85,
+2013S1,Iceland,Euro,,z
+2013S1,Norway,Euro,,z
+2013S1,Switzerland,Euro,,z
+2013S1,Montenegro,Euro,,
+2013S1,"Former Yugoslav Republic of Macedonia, the",Euro,199.48,
+2013S1,Albania,Euro,,
+2013S1,Serbia,Euro,239.24,
+2013S1,Turkey,Euro,415.52,
+2013S1,United States,Euro,952.46,
+2013S2,Belgium,Euro,1501.82,
+2013S2,Bulgaria,Euro,158.50,
+2013S2,Czech Republic,Euro,308.30,
+2013S2,Denmark,Euro,,z
+2013S2,Germany (until 1990 former territory of the FRG),Euro,,z
+2013S2,Estonia,Euro,320.00,
+2013S2,Ireland,Euro,1461.85,
+2013S2,Greece,Euro,683.76,
+2013S2,Spain,Euro,752.85,
+2013S2,France,Euro,1430.22,
+2013S2,Croatia,Euro,400.67,
+2013S2,Italy,Euro,,z
+2013S2,Cyprus,Euro,,z
+2013S2,Latvia,Euro,284.74,
+2013S2,Lithuania,Euro,289.62,
+2013S2,Luxembourg,Euro,1874.19,
+2013S2,Hungary,Euro,332.37,
+2013S2,Malta,Euro,702.82,
+2013S2,Netherlands,Euro,1477.80,
+2013S2,Austria,Euro,,z
+2013S2,Poland,Euro,368.87,
+2013S2,Portugal,Euro,565.83,
+2013S2,Romania,Euro,179.36,
+2013S2,Slovenia,Euro,783.66,
+2013S2,Slovakia,Euro,337.70,
+2013S2,Finland,Euro,,z
+2013S2,Sweden,Euro,,z
+2013S2,United Kingdom,Euro,1189.92,
+2013S2,Iceland,Euro,,z
+2013S2,Norway,Euro,,z
+2013S2,Switzerland,Euro,,z
+2013S2,Montenegro,Euro,288.05,
+2013S2,"Former Yugoslav Republic of Macedonia, the",Euro,198.95,
+2013S2,Albania,Euro,,
+2013S2,Serbia,Euro,236.28,
+2013S2,Turkey,Euro,405.20,
+2013S2,United States,Euro,960.76,
+2014S1,Belgium,Euro,1501.82,
+2014S1,Bulgaria,Euro,173.84,
+2014S1,Czech Republic,Euro,309.91,
+2014S1,Denmark,Euro,,z
+2014S1,Germany (until 1990 former territory of the FRG),Euro,,z
+2014S1,Estonia,Euro,355.00,
+2014S1,Ireland,Euro,1461.85,
+2014S1,Greece,Euro,683.76,
+2014S1,Spain,Euro,752.85,
+2014S1,France,Euro,1445.38,
+2014S1,Croatia,Euro,395.67,
+2014S1,Italy,Euro,,z
+2014S1,Cyprus,Euro,,z
+2014S1,Latvia,Euro,320.00,
+2014S1,Lithuania,Euro,289.62,
+2014S1,Luxembourg,Euro,1921.03,
+2014S1,Hungary,Euro,341.70,
+2014S1,Malta,Euro,717.95,
+2014S1,Netherlands,Euro,1485.60,
+2014S1,Austria,Euro,,z
+2014S1,Poland,Euro,404.40,
+2014S1,Portugal,Euro,565.83,
+2014S1,Romania,Euro,190.11,
+2014S1,Slovenia,Euro,789.15,
+2014S1,Slovakia,Euro,352.00,
+2014S1,Finland,Euro,,z
+2014S1,Sweden,Euro,,z
+2014S1,United Kingdom,Euro,1251.05,
+2014S1,Iceland,Euro,,z
+2014S1,Norway,Euro,,z
+2014S1,Switzerland,Euro,,z
+2014S1,Montenegro,Euro,288.05,
+2014S1,"Former Yugoslav Republic of Macedonia, the",Euro,213.62,
+2014S1,Albania,Euro,156.92,
+2014S1,Serbia,Euro,235.31,
+2014S1,Turkey,Euro,361.76,
+2014S1,United States,Euro,911.22,
+2014S2,Belgium,Euro,1501.82,
+2014S2,Bulgaria,Euro,173.84,
+2014S2,Czech Republic,Euro,309.62,
+2014S2,Denmark,Euro,,z
+2014S2,Germany (until 1990 former territory of the FRG),Euro,,z
+2014S2,Estonia,Euro,355.00,
+2014S2,Ireland,Euro,1461.85,
+2014S2,Greece,Euro,683.76,
+2014S2,Spain,Euro,752.85,
+2014S2,France,Euro,1445.38,
+2014S2,Croatia,Euro,398.31,
+2014S2,Italy,Euro,,z
+2014S2,Cyprus,Euro,,z
+2014S2,Latvia,Euro,320.00,
+2014S2,Lithuania,Euro,289.62,
+2014S2,Luxembourg,Euro,1921.03,
+2014S2,Hungary,Euro,328.16,
+2014S2,Malta,Euro,717.95,
+2014S2,Netherlands,Euro,1495.20,
+2014S2,Austria,Euro,,z
+2014S2,Poland,Euro,404.16,
+2014S2,Portugal,Euro,565.83,
+2014S2,Romania,Euro,205.34,
+2014S2,Slovenia,Euro,789.15,
+2014S2,Slovakia,Euro,352.00,
+2014S2,Finland,Euro,,z
+2014S2,Sweden,Euro,,z
+2014S2,United Kingdom,Euro,1301.31,
+2014S2,Iceland,Euro,,z
+2014S2,Norway,Euro,,z
+2014S2,Switzerland,Euro,,z
+2014S2,Montenegro,Euro,288.05,
+2014S2,"Former Yugoslav Republic of Macedonia, the",Euro,213.04,
+2014S2,Albania,Euro,156.85,
+2014S2,Serbia,Euro,232.90,
+2014S2,Turkey,Euro,391.45,
+2014S2,United States,Euro,920.10,
+2015S1,Belgium,Euro,1501.82,
+2015S1,Bulgaria,Euro,184.07,
+2015S1,Czech Republic,Euro,331.71,
+2015S1,Denmark,Euro,,z
+2015S1,Germany (until 1990 former territory of the FRG),Euro,1440.00,
+2015S1,Estonia,Euro,390.00,
+2015S1,Ireland,Euro,1461.85,
+2015S1,Greece,Euro,683.76,
+2015S1,Spain,Euro,756.70,
+2015S1,France,Euro,1457.52,
+2015S1,Croatia,Euro,395.61,
+2015S1,Italy,Euro,,z
+2015S1,Cyprus,Euro,,z
+2015S1,Latvia,Euro,360.00,
+2015S1,Lithuania,Euro,300.00,
+2015S1,Luxembourg,Euro,1922.96,
+2015S1,Hungary,Euro,332.76,
+2015S1,Malta,Euro,720.46,
+2015S1,Netherlands,Euro,1501.80,
+2015S1,Austria,Euro,,z
+2015S1,Poland,Euro,409.53,
+2015S1,Portugal,Euro,589.17,
+2015S1,Romania,Euro,217.50,
+2015S1,Slovenia,Euro,790.73,
+2015S1,Slovakia,Euro,380.00,
+2015S1,Finland,Euro,,z
+2015S1,Sweden,Euro,,z
+2015S1,United Kingdom,Euro,1378.87,
+2015S1,Iceland,Euro,,z
+2015S1,Norway,Euro,,z
+2015S1,Switzerland,Euro,,z
+2015S1,Montenegro,Euro,288.05,
+2015S1,"Former Yugoslav Republic of Macedonia, the",Euro,213.72,
+2015S1,Albania,Euro,156.99,
+2015S1,Serbia,Euro,235.05,
+2015S1,Turkey,Euro,424.26,
+2015S1,United States,Euro,1035.06,
+2015S2,Belgium,Euro,1501.82,
+2015S2,Bulgaria,Euro,194.29,
+2015S2,Czech Republic,Euro,337.58,
+2015S2,Denmark,Euro,,z
+2015S2,Germany (until 1990 former territory of the FRG),Euro,1440.00,
+2015S2,Estonia,Euro,390.00,
+2015S2,Ireland,Euro,1461.85,
+2015S2,Greece,Euro,683.76,
+2015S2,Spain,Euro,756.70,
+2015S2,France,Euro,1457.52,
+2015S2,Croatia,Euro,398.90,
+2015S2,Italy,Euro,,z
+2015S2,Cyprus,Euro,,z
+2015S2,Latvia,Euro,360.00,
+2015S2,Lithuania,Euro,325.00,
+2015S2,Luxembourg,Euro,1922.96,
+2015S2,Hungary,Euro,333.41,
+2015S2,Malta,Euro,720.46,
+2015S2,Netherlands,Euro,1507.80,
+2015S2,Austria,Euro,,z
+2015S2,Poland,Euro,417.55,
+2015S2,Portugal,Euro,589.17,
+2015S2,Romania,Euro,234.77,
+2015S2,Slovenia,Euro,790.73,
+2015S2,Slovakia,Euro,380.00,
+2015S2,Finland,Euro,,z
+2015S2,Sweden,Euro,,z
+2015S2,United Kingdom,Euro,1509.70,
+2015S2,Iceland,Euro,,z
+2015S2,Norway,Euro,,z
+2015S2,Switzerland,Euro,,z
+2015S2,Montenegro,Euro,288.05,
+2015S2,"Former Yugoslav Republic of Macedonia, the",Euro,226.69,
+2015S2,Albania,Euro,156.82,
+2015S2,Serbia,Euro,235.51,
+2015S2,Turkey,Euro,425.17,
+2015S2,United States,Euro,1123.13,
+2016S1,Belgium,Euro,1501.82,
+2016S1,Bulgaria,Euro,214.75,
+2016S1,Czech Republic,Euro,366.35,
+2016S1,Denmark,Euro,,z
+2016S1,Germany (until 1990 former territory of the FRG),Euro,1440.00,
+2016S1,Estonia,Euro,430.00,
+2016S1,Ireland,Euro,1546.35,
+2016S1,Greece,Euro,683.76,
+2016S1,Spain,Euro,764.40,
+2016S1,France,Euro,1466.62,
+2016S1,Croatia,Euro,408.48,
+2016S1,Italy,Euro,,z
+2016S1,Cyprus,Euro,,z
+2016S1,Latvia,Euro,370.00,
+2016S1,Lithuania,Euro,350.00,
+2016S1,Luxembourg,Euro,1922.96,
+2016S1,Hungary,Euro,351.29,
+2016S1,Malta,Euro,728.04,
+2016S1,Netherlands,Euro,1524.60,
+2016S1,Austria,Euro,,z
+2016S1,Poland,Euro,433.88,
+2016S1,Portugal,Euro,618.33,
+2016S1,Romania,Euro,232.10,
+2016S1,Slovenia,Euro,790.73,
+2016S1,Slovakia,Euro,405.00,
+2016S1,Finland,Euro,,z
+2016S1,Sweden,Euro,,z
+2016S1,United Kingdom,Euro,1512.36,
+2016S1,Iceland,Euro,,z
+2016S1,Norway,Euro,,z
+2016S1,Switzerland,Euro,,z
+2016S1,Montenegro,Euro,288.05,
+2016S1,"Former Yugoslav Republic of Macedonia, the",Euro,223.08,
+2016S1,Albania,Euro,155.71,
+2016S1,Serbia,Euro,233.57,
+2016S1,Turkey,Euro,518.50,
+2016S1,United States,Euro,1154.28,
+2016S2,Belgium,Euro,1531.93,
+2016S2,Bulgaria,Euro,214.75,
+2016S2,Czech Republic,Euro,364.90,
+2016S2,Denmark,Euro,,
+2016S2,Germany (until 1990 former territory of the FRG),Euro,1440.00,
+2016S2,Estonia,Euro,430.00,
+2016S2,Ireland,Euro,1546.35,
+2016S2,Greece,Euro,683.76,
+2016S2,Spain,Euro,764.40,
+2016S2,France,Euro,1466.62,
+2016S2,Croatia,Euro,414.45,
+2016S2,Italy,Euro,,
+2016S2,Cyprus,Euro,,
+2016S2,Latvia,Euro,370.00,
+2016S2,Lithuania,Euro,380.00,
+2016S2,Luxembourg,Euro,1922.96,
+2016S2,Hungary,Euro,350.09,
+2016S2,Malta,Euro,728.04,
+2016S2,Netherlands,Euro,1537.20,
+2016S2,Austria,Euro,,
+2016S2,Poland,Euro,417.02,
+2016S2,Portugal,Euro,,
+2016S2,Romania,Euro,276.34,
+2016S2,Slovenia,Euro,790.73,
+2016S2,Slovakia,Euro,405.00,
+2016S2,Finland,Euro,,
+2016S2,Sweden,Euro,,
+2016S2,United Kingdom,Euro,1343.01,
+2016S2,Iceland,Euro,,
+2016S2,Norway,Euro,,
+2016S2,Switzerland,Euro,,
+2016S2,Montenegro,Euro,288.05,
+2016S2,"Former Yugoslav Republic of Macedonia, the",Euro,232.28,
+2016S2,Albania,Euro,155.71,
+2016S2,Serbia,Euro,233.37,
+2016S2,Turkey,Euro,513.72,
+2016S2,United States,Euro,,
