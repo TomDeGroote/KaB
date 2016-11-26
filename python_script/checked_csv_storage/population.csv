@@ -1,0 +1,581 @@
+,TIME,GEO,AGE,SEX,UNIT,Value
+0,2006,European Union (28 countries),Total,Total,Number,496436597.0
+1,2006,European Union (27 countries),Total,Total,Number,492124110.0
+2,2006,Euro area (19 countries),Total,Total,Number,329684938.0
+3,2006,Euro area (18 countries),Total,Total,Number,326395103.0
+4,2006,Belgium,Total,Total,Number,10511382.0
+5,2006,Bulgaria,Total,Total,Number,7629371.0
+6,2006,Czech Republic,Total,Total,Number,10223577.0
+7,2006,Denmark,Total,Total,Number,5427459.0
+8,2006,Germany (until 1990 former territory of the FRG),Total,Total,Number,82437995.0
+9,2006,Germany (including former GDR),Total,Total,Number,82437995.0
+10,2006,Estonia,Total,Total,Number,1350700.0
+11,2006,Ireland,Total,Total,Number,4208156.0
+12,2006,Greece,Total,Total,Number,11004716.0
+13,2006,Spain,Total,Total,Number,44009971.0
+14,2006,France,Total,Total,Number,63229635.0
+15,2006,France (metropolitan),Total,Total,Number,61399733.0
+16,2006,Croatia,Total,Total,Number,4312487.0
+17,2006,Italy,Total,Total,Number,58064214.0
+18,2006,Cyprus,Total,Total,Number,744013.0
+19,2006,Latvia,Total,Total,Number,2227874.0
+20,2006,Lithuania,Total,Total,Number,3289835.0
+21,2006,Luxembourg,Total,Total,Number,469086.0
+22,2006,Hungary,Total,Total,Number,10076581.0
+23,2006,Malta,Total,Total,Number,404999.0
+24,2006,Netherlands,Total,Total,Number,16334210.0
+25,2006,Austria,Total,Total,Number,8254298.0
+26,2006,Poland,Total,Total,Number,38157055.0
+27,2006,Portugal,Total,Total,Number,10511988.0
+28,2006,Romania,Total,Total,Number,21257016.0
+29,2006,Slovenia,Total,Total,Number,2003358.0
+30,2006,Slovakia,Total,Total,Number,5372928.0
+31,2006,Finland,Total,Total,Number,5255580.0
+32,2006,Sweden,Total,Total,Number,9047752.0
+33,2006,United Kingdom,Total,Total,Number,60620361.0
+34,2006,"European Economic Area (EU-28 plus IS, LI, NO)",Total,Total,Number,501411612.0
+35,2006,"European Economic Area (EU-27 plus IS, LI, NO)",Total,Total,Number,497099125.0
+36,2006,European Free Trade Association,Total,Total,Number,12434143.0
+37,2006,Iceland,Total,Total,Number,299891.0
+38,2006,Liechtenstein,Total,Total,Number,34905.0
+39,2006,Norway,Total,Total,Number,4640219.0
+40,2006,Switzerland,Total,Total,Number,7459128.0
+41,2006,Montenegro,Total,Total,Number,613109.0
+42,2006,"Former Yugoslav Republic of Macedonia, the",Total,Total,Number,2038514.0
+43,2006,Albania,Total,Total,Number,3149143.0
+44,2006,Serbia,Total,Total,Number,7425487.0
+45,2006,Turkey,Total,Total,Number,68860539.0
+46,2006,Andorra,Total,Total,Number,78549.0
+47,2006,Belarus,Total,Total,Number,9750540.0
+48,2006,Bosnia and Herzegovina,Total,Total,Number,3842650.0
+49,2006,Kosovo (under United Nations Security Council Resolution 1244/99),Total,Total,Number,2100000.0
+50,2006,Moldova,Total,Total,Number,3589936.0
+51,2006,Monaco,Total,Total,Number,
+52,2006,Russia,Total,Total,Number,142753551.0
+53,2006,San Marino,Total,Total,Number,29999.0
+54,2006,Ukraine,Total,Total,Number,46749170.0
+55,2006,Armenia,Total,Total,Number,3219234.0
+56,2006,Azerbaijan,Total,Total,Number,8436400.0
+57,2006,Georgia,Total,Total,Number,4401292.0
+58,2007,European Union (28 countries),Total,Total,Number,498300775.0
+59,2007,European Union (27 countries),Total,Total,Number,493987245.0
+60,2007,Euro area (19 countries),Total,Total,Number,331204579.0
+61,2007,Euro area (18 countries),Total,Total,Number,327954596.0
+62,2007,Belgium,Total,Total,Number,10584534.0
+63,2007,Bulgaria,Total,Total,Number,7572673.0
+64,2007,Czech Republic,Total,Total,Number,10254233.0
+65,2007,Denmark,Total,Total,Number,5447084.0
+66,2007,Germany (until 1990 former territory of the FRG),Total,Total,Number,82314906.0
+67,2007,Germany (including former GDR),Total,Total,Number,82314906.0
+68,2007,Estonia,Total,Total,Number,1342920.0
+69,2007,Ireland,Total,Total,Number,4340118.0
+70,2007,Greece,Total,Total,Number,11036008.0
+71,2007,Spain,Total,Total,Number,44784666.0
+72,2007,France,Total,Total,Number,63645065.0
+73,2007,France (metropolitan),Total,Total,Number,61795238.0
+74,2007,Croatia,Total,Total,Number,4313530.0
+75,2007,Italy,Total,Total,Number,58223744.0
+76,2007,Cyprus,Total,Total,Number,757916.0
+77,2007,Latvia,Total,Total,Number,2208840.0
+78,2007,Lithuania,Total,Total,Number,3249983.0
+79,2007,Luxembourg,Total,Total,Number,476187.0
+80,2007,Hungary,Total,Total,Number,10066158.0
+81,2007,Malta,Total,Total,Number,405616.0
+82,2007,Netherlands,Total,Total,Number,16357992.0
+83,2007,Austria,Total,Total,Number,8282984.0
+84,2007,Poland,Total,Total,Number,38125479.0
+85,2007,Portugal,Total,Total,Number,10532588.0
+86,2007,Romania,Total,Total,Number,21130503.0
+87,2007,Slovenia,Total,Total,Number,2010377.0
+88,2007,Slovakia,Total,Total,Number,5373180.0
+89,2007,Finland,Total,Total,Number,5276955.0
+90,2007,Sweden,Total,Total,Number,9113257.0
+91,2007,United Kingdom,Total,Total,Number,61073279.0
+92,2007,"European Economic Area (EU-28 plus IS, LI, NO)",Total,Total,Number,503324749.0
+93,2007,"European Economic Area (EU-27 plus IS, LI, NO)",Total,Total,Number,499011219.0
+94,2007,European Free Trade Association,Total,Total,Number,12532713.0
+95,2007,Iceland,Total,Total,Number,307672.0
+96,2007,Liechtenstein,Total,Total,Number,35168.0
+97,2007,Norway,Total,Total,Number,4681134.0
+98,2007,Switzerland,Total,Total,Number,7508739.0
+99,2007,Montenegro,Total,Total,Number,614624.0
+100,2007,"Former Yugoslav Republic of Macedonia, the",Total,Total,Number,2041941.0
+101,2007,Albania,Total,Total,Number,3152625.0
+102,2007,Serbia,Total,Total,Number,7397651.0
+103,2007,Turkey,Total,Total,Number,69729967.0
+104,2007,Andorra,Total,Total,Number,81222.0
+105,2007,Belarus,Total,Total,Number,9714461.0
+106,2007,Bosnia and Herzegovina,Total,Total,Number,3844017.0
+107,2007,Kosovo (under United Nations Security Council Resolution 1244/99),Total,Total,Number,2126708.0
+108,2007,Moldova,Total,Total,Number,3581110.0
+109,2007,Monaco,Total,Total,Number,
+110,2007,Russia,Total,Total,Number,142220968.0
+111,2007,San Marino,Total,Total,Number,30368.0
+112,2007,Ukraine,Total,Total,Number,46465691.0
+113,2007,Armenia,Total,Total,Number,3222953.0
+114,2007,Azerbaijan,Total,Total,Number,8532700.0
+115,2007,Georgia,Total,Total,Number,4394702.0
+116,2008,European Union (28 countries),Total,Total,Number,500297033.0
+117,2008,European Union (27 countries),Total,Total,Number,495985066.0
+118,2008,Euro area (19 countries),Total,Total,Number,333096775.0
+119,2008,Euro area (18 countries),Total,Total,Number,329884170.0
+120,2008,Belgium,Total,Total,Number,10666866.0
+121,2008,Bulgaria,Total,Total,Number,7518002.0
+122,2008,Czech Republic,Total,Total,Number,10343422.0
+123,2008,Denmark,Total,Total,Number,5475791.0
+124,2008,Germany (until 1990 former territory of the FRG),Total,Total,Number,82217837.0
+125,2008,Germany (including former GDR),Total,Total,Number,82217837.0
+126,2008,Estonia,Total,Total,Number,1338440.0
+127,2008,Ireland,Total,Total,Number,4457765.0
+128,2008,Greece,Total,Total,Number,11060937.0
+129,2008,Spain,Total,Total,Number,45668939.0
+130,2008,France,Total,Total,Number,64007193.0
+131,2008,France (metropolitan),Total,Total,Number,62134866.0
+132,2008,Croatia,Total,Total,Number,4311967.0
+133,2008,Italy,Total,Total,Number,58652875.0
+134,2008,Cyprus,Total,Total,Number,776333.0
+135,2008,Latvia,Total,Total,Number,2191810.0
+136,2008,Lithuania,Total,Total,Number,3212605.0
+137,2008,Luxembourg,Total,Total,Number,483799.0
+138,2008,Hungary,Total,Total,Number,10045401.0
+139,2008,Malta,Total,Total,Number,407832.0
+140,2008,Netherlands,Total,Total,Number,16405399.0
+141,2008,Austria,Total,Total,Number,8307989.0
+142,2008,Poland,Total,Total,Number,38115641.0
+143,2008,Portugal,Total,Total,Number,10553339.0
+144,2008,Romania,Total,Total,Number,20635460.0
+145,2008,Slovenia,Total,Total,Number,2010269.0
+146,2008,Slovakia,Total,Total,Number,5376064.0
+147,2008,Finland,Total,Total,Number,5300484.0
+148,2008,Sweden,Total,Total,Number,9182927.0
+149,2008,United Kingdom,Total,Total,Number,61571647.0
+150,2008,"European Economic Area (EU-28 plus IS, LI, NO)",Total,Total,Number,505385019.0
+151,2008,"European Economic Area (EU-27 plus IS, LI, NO)",Total,Total,Number,501073052.0
+152,2008,European Free Trade Association,Total,Total,Number,12681480.0
+153,2008,Iceland,Total,Total,Number,315459.0
+154,2008,Liechtenstein,Total,Total,Number,35356.0
+155,2008,Norway,Total,Total,Number,4737171.0
+156,2008,Switzerland,Total,Total,Number,7593494.0
+157,2008,Montenegro,Total,Total,Number,615543.0
+158,2008,"Former Yugoslav Republic of Macedonia, the",Total,Total,Number,2045177.0
+159,2008,Albania,Total,Total,Number,3170050.0
+160,2008,Serbia,Total,Total,Number,7365507.0
+161,2008,Turkey,Total,Total,Number,70586256.0
+162,2008,Andorra,Total,Total,Number,83137.0
+163,2008,Belarus,Total,Total,Number,9689770.0
+164,2008,Bosnia and Herzegovina,Total,Total,Number,3843846.0
+165,2008,Kosovo (under United Nations Security Council Resolution 1244/99),Total,Total,Number,2153139.0
+166,2008,Moldova,Total,Total,Number,3572703.0
+167,2008,Monaco,Total,Total,Number,
+168,2008,Russia,Total,Total,Number,142008838.0
+169,2008,San Marino,Total,Total,Number,32054.0
+170,2008,Ukraine,Total,Total,Number,46192309.0
+171,2008,Armenia,Total,Total,Number,3230086.0
+172,2008,Azerbaijan,Total,Total,Number,8629900.0
+173,2008,Georgia,Total,Total,Number,4382070.0
+174,2009,European Union (28 countries),Total,Total,Number,502090235.0
+175,2009,European Union (27 countries),Total,Total,Number,497780439.0
+176,2009,Euro area (19 countries),Total,Total,Number,334470255.0
+177,2009,Euro area (18 countries),Total,Total,Number,331286399.0
+178,2009,Belgium,Total,Total,Number,10753080.0
+179,2009,Bulgaria,Total,Total,Number,7467119.0
+180,2009,Czech Republic,Total,Total,Number,10425783.0
+181,2009,Denmark,Total,Total,Number,5511451.0
+182,2009,Germany (until 1990 former territory of the FRG),Total,Total,Number,82002356.0
+183,2009,Germany (including former GDR),Total,Total,Number,82002356.0
+184,2009,Estonia,Total,Total,Number,1335740.0
+185,2009,Ireland,Total,Total,Number,4521322.0
+186,2009,Greece,Total,Total,Number,11094745.0
+187,2009,Spain,Total,Total,Number,46239273.0
+188,2009,France,Total,Total,Number,64350226.0
+189,2009,France (metropolitan),Total,Total,Number,62465709.0
+190,2009,Croatia,Total,Total,Number,4309796.0
+191,2009,Italy,Total,Total,Number,59000586.0
+192,2009,Cyprus,Total,Total,Number,796930.0
+193,2009,Latvia,Total,Total,Number,2162834.0
+194,2009,Lithuania,Total,Total,Number,3183856.0
+195,2009,Luxembourg,Total,Total,Number,493500.0
+196,2009,Hungary,Total,Total,Number,10030975.0
+197,2009,Malta,Total,Total,Number,410926.0
+198,2009,Netherlands,Total,Total,Number,16485787.0
+199,2009,Austria,Total,Total,Number,8335003.0
+200,2009,Poland,Total,Total,Number,38135876.0
+201,2009,Portugal,Total,Total,Number,10563014.0
+202,2009,Romania,Total,Total,Number,20440290.0
+203,2009,Slovenia,Total,Total,Number,2032362.0
+204,2009,Slovakia,Total,Total,Number,5382401.0
+205,2009,Finland,Total,Total,Number,5326314.0
+206,2009,Sweden,Total,Total,Number,9256347.0
+207,2009,United Kingdom,Total,Total,Number,62042343.0
+208,2009,"European Economic Area (EU-28 plus IS, LI, NO)",Total,Total,Number,507244444.0
+209,2009,"European Economic Area (EU-27 plus IS, LI, NO)",Total,Total,Number,502934648.0
+210,2009,European Free Trade Association,Total,Total,Number,12856065.0
+211,2009,Iceland,Total,Total,Number,319368.0
+212,2009,Liechtenstein,Total,Total,Number,35589.0
+213,2009,Norway,Total,Total,Number,4799252.0
+214,2009,Switzerland,Total,Total,Number,7701856.0
+215,2009,Montenegro,Total,Total,Number,617157.0
+216,2009,"Former Yugoslav Republic of Macedonia, the",Total,Total,Number,2048619.0
+217,2009,Albania,Total,Total,Number,3184701.0
+218,2009,Serbia,Total,Total,Number,7334937.0
+219,2009,Turkey,Total,Total,Number,71517100.0
+220,2009,Andorra,Total,Total,Number,84484.0
+221,2009,Belarus,Total,Total,Number,9671912.0
+222,2009,Bosnia and Herzegovina,Total,Total,Number,3843998.0
+223,2009,Kosovo (under United Nations Security Council Resolution 1244/99),Total,Total,Number,2180686.0
+224,2009,Moldova,Total,Total,Number,3567512.0
+225,2009,Monaco,Total,Total,Number,
+226,2009,Russia,Total,Total,Number,141903979.0
+227,2009,San Marino,Total,Total,Number,31269.0
+228,2009,Ukraine,Total,Total,Number,45963359.0
+229,2009,Armenia,Total,Total,Number,3237976.0
+230,2009,Azerbaijan,Total,Total,Number,8896900.0
+231,2009,Georgia,Total,Total,Number,4385429.0
+232,2010,European Union (28 countries),Total,Total,Number,503170618.0
+233,2010,European Union (27 countries),Total,Total,Number,498867771.0
+234,2010,Euro area (19 countries),Total,Total,Number,335266424.0
+235,2010,Euro area (18 countries),Total,Total,Number,332124448.0
+236,2010,Belgium,Total,Total,Number,10839905.0
+237,2010,Bulgaria,Total,Total,Number,7421766.0
+238,2010,Czech Republic,Total,Total,Number,10462088.0
+239,2010,Denmark,Total,Total,Number,5534738.0
+240,2010,Germany (until 1990 former territory of the FRG),Total,Total,Number,81802257.0
+241,2010,Germany (including former GDR),Total,Total,Number,81802257.0
+242,2010,Estonia,Total,Total,Number,1333290.0
+243,2010,Ireland,Total,Total,Number,4549428.0
+244,2010,Greece,Total,Total,Number,11119289.0
+245,2010,Spain,Total,Total,Number,46486619.0
+246,2010,France,Total,Total,Number,64658856.0
+247,2010,France (metropolitan),Total,Total,Number,62765235.0
+248,2010,Croatia,Total,Total,Number,4302847.0
+249,2010,Italy,Total,Total,Number,59190143.0
+250,2010,Cyprus,Total,Total,Number,819140.0
+251,2010,Latvia,Total,Total,Number,2120504.0
+252,2010,Lithuania,Total,Total,Number,3141976.0
+253,2010,Luxembourg,Total,Total,Number,502066.0
+254,2010,Hungary,Total,Total,Number,10014324.0
+255,2010,Malta,Total,Total,Number,414027.0
+256,2010,Netherlands,Total,Total,Number,16574989.0
+257,2010,Austria,Total,Total,Number,8351643.0
+258,2010,Poland,Total,Total,Number,38022869.0
+259,2010,Portugal,Total,Total,Number,10573479.0
+260,2010,Romania,Total,Total,Number,20294683.0
+261,2010,Slovenia,Total,Total,Number,2046976.0
+262,2010,Slovakia,Total,Total,Number,5390410.0
+263,2010,Finland,Total,Total,Number,5351427.0
+264,2010,Sweden,Total,Total,Number,9340682.0
+265,2010,United Kingdom,Total,Total,Number,62510197.0
+266,2010,"European Economic Area (EU-28 plus IS, LI, NO)",Total,Total,Number,508382341.0
+267,2010,"European Economic Area (EU-27 plus IS, LI, NO)",Total,Total,Number,504079494.0
+268,2010,European Free Trade Association,Total,Total,Number,12997529.0
+269,2010,Iceland,Total,Total,Number,317630.0
+270,2010,Liechtenstein,Total,Total,Number,35894.0
+271,2010,Norway,Total,Total,Number,4858199.0
+272,2010,Switzerland,Total,Total,Number,7785806.0
+273,2010,Montenegro,Total,Total,Number,619001.0
+274,2010,"Former Yugoslav Republic of Macedonia, the",Total,Total,Number,2052722.0
+275,2010,Albania,Total,Total,Number,
+276,2010,Serbia,Total,Total,Number,7306677.0
+277,2010,Turkey,Total,Total,Number,72561312.0
+278,2010,Andorra,Total,Total,Number,84082.0
+279,2010,Belarus,Total,Total,Number,9480178.0
+280,2010,Bosnia and Herzegovina,Total,Total,Number,3844046.0
+281,2010,Kosovo (under United Nations Security Council Resolution 1244/99),Total,Total,Number,2208107.0
+282,2010,Moldova,Total,Total,Number,3563695.0
+283,2010,Monaco,Total,Total,Number,
+284,2010,Russia,Total,Total,Number,141914509.0
+285,2010,San Marino,Total,Total,Number,
+286,2010,Ukraine,Total,Total,Number,45782592.0
+287,2010,Armenia,Total,Total,Number,3249482.0
+288,2010,Azerbaijan,Total,Total,Number,8997586.0
+289,2010,Georgia,Total,Total,Number,4436391.0
+290,2011,European Union (28 countries),Total,Total,Number,502964837.0
+291,2011,European Union (27 countries),Total,Total,Number,498674980.0
+292,2011,Euro area (19 countries),Total,Total,Number,334572589.0
+293,2011,Euro area (18 countries),Total,Total,Number,331520001.0
+294,2011,Belgium,Total,Total,Number,11000638.0
+295,2011,Bulgaria,Total,Total,Number,7369431.0
+296,2011,Czech Republic,Total,Total,Number,10486731.0
+297,2011,Denmark,Total,Total,Number,5560628.0
+298,2011,Germany (until 1990 former territory of the FRG),Total,Total,Number,80222065.0
+299,2011,Germany (including former GDR),Total,Total,Number,80222065.0
+300,2011,Estonia,Total,Total,Number,1329660.0
+301,2011,Ireland,Total,Total,Number,4570881.0
+302,2011,Greece,Total,Total,Number,11123392.0
+303,2011,Spain,Total,Total,Number,46667174.0
+304,2011,France,Total,Total,Number,64978721.0
+305,2011,France (metropolitan),Total,Total,Number,63070344.0
+306,2011,Croatia,Total,Total,Number,4289857.0
+307,2011,Italy,Total,Total,Number,59364690.0
+308,2011,Cyprus,Total,Total,Number,839751.0
+309,2011,Latvia,Total,Total,Number,2074605.0
+310,2011,Lithuania,Total,Total,Number,3052588.0
+311,2011,Luxembourg,Total,Total,Number,511840.0
+312,2011,Hungary,Total,Total,Number,9985722.0
+313,2011,Malta,Total,Total,Number,414989.0
+314,2011,Netherlands,Total,Total,Number,16655799.0
+315,2011,Austria,Total,Total,Number,8375164.0
+316,2011,Poland,Total,Total,Number,38062718.0
+317,2011,Portugal,Total,Total,Number,10572721.0
+318,2011,Romania,Total,Total,Number,20199059.0
+319,2011,Slovenia,Total,Total,Number,2050189.0
+320,2011,Slovakia,Total,Total,Number,5392446.0
+321,2011,Finland,Total,Total,Number,5375276.0
+322,2011,Sweden,Total,Total,Number,9415570.0
+323,2011,United Kingdom,Total,Total,Number,63022532.0
+324,2011,"European Economic Area (EU-28 plus IS, LI, NO)",Total,Total,Number,508239743.0
+325,2011,"European Economic Area (EU-27 plus IS, LI, NO)",Total,Total,Number,503949886.0
+326,2011,European Free Trade Association,Total,Total,Number,13145040.0
+327,2011,Iceland,Total,Total,Number,318452.0
+328,2011,Liechtenstein,Total,Total,Number,36149.0
+329,2011,Norway,Total,Total,Number,4920305.0
+330,2011,Switzerland,Total,Total,Number,7870134.0
+331,2011,Montenegro,Total,Total,Number,619850.0
+332,2011,"Former Yugoslav Republic of Macedonia, the",Total,Total,Number,2057284.0
+333,2011,Albania,Total,Total,Number,2831741.0
+334,2011,Serbia,Total,Total,Number,7251549.0
+335,2011,Turkey,Total,Total,Number,73722988.0
+336,2011,Andorra,Total,Total,Number,78115.0
+337,2011,Belarus,Total,Total,Number,9481193.0
+338,2011,Bosnia and Herzegovina,Total,Total,Number,3843183.0
+339,2011,Kosovo (under United Nations Security Council Resolution 1244/99),Total,Total,Number,1794180.0
+340,2011,Moldova,Total,Total,Number,3560430.0
+341,2011,Monaco,Total,Total,Number,
+342,2011,Russia,Total,Total,Number,142856536.0
+343,2011,San Marino,Total,Total,Number,31863.0
+344,2011,Ukraine,Total,Total,Number,45598179.0
+345,2011,Armenia,Total,Total,Number,3262650.0
+346,2011,Azerbaijan,Total,Total,Number,9111078.0
+347,2011,Georgia,Total,Total,Number,4469250.0
+348,2012,European Union (28 countries),Total,Total,Number,504060345.0
+349,2012,European Union (27 countries),Total,Total,Number,499784361.0
+350,2012,Euro area (19 countries),Total,Total,Number,335301305.0
+351,2012,Euro area (18 countries),Total,Total,Number,332297664.0
+352,2012,Belgium,Total,Total,Number,11094850.0
+353,2012,Bulgaria,Total,Total,Number,7327224.0
+354,2012,Czech Republic,Total,Total,Number,10505445.0
+355,2012,Denmark,Total,Total,Number,5580516.0
+356,2012,Germany (until 1990 former territory of the FRG),Total,Total,Number,80327900.0
+357,2012,Germany (including former GDR),Total,Total,Number,80327900.0
+358,2012,Estonia,Total,Total,Number,1325217.0
+359,2012,Ireland,Total,Total,Number,4582707.0
+360,2012,Greece,Total,Total,Number,11086406.0
+361,2012,Spain,Total,Total,Number,46818219.0
+362,2012,France,Total,Total,Number,65276983.0
+363,2012,France (metropolitan),Total,Total,Number,63375971.0
+364,2012,Croatia,Total,Total,Number,4275984.0
+365,2012,Italy,Total,Total,Number,59394207.0
+366,2012,Cyprus,Total,Total,Number,862011.0
+367,2012,Latvia,Total,Total,Number,2044813.0
+368,2012,Lithuania,Total,Total,Number,3003641.0
+369,2012,Luxembourg,Total,Total,Number,524853.0
+370,2012,Hungary,Total,Total,Number,9931925.0
+371,2012,Malta,Total,Total,Number,417546.0
+372,2012,Netherlands,Total,Total,Number,16730348.0
+373,2012,Austria,Total,Total,Number,8408121.0
+374,2012,Poland,Total,Total,Number,38063792.0
+375,2012,Portugal,Total,Total,Number,10542398.0
+376,2012,Romania,Total,Total,Number,20095996.0
+377,2012,Slovenia,Total,Total,Number,2055496.0
+378,2012,Slovakia,Total,Total,Number,5404322.0
+379,2012,Finland,Total,Total,Number,5401267.0
+380,2012,Sweden,Total,Total,Number,9482855.0
+381,2012,United Kingdom,Total,Total,Number,63495303.0
+382,2012,"European Economic Area (EU-28 plus IS, LI, NO)",Total,Total,Number,509402265.0
+383,2012,"European Economic Area (EU-27 plus IS, LI, NO)",Total,Total,Number,505126281.0
+384,2012,European Free Trade Association,Total,Total,Number,13296582.0
+385,2012,Iceland,Total,Total,Number,319575.0
+386,2012,Liechtenstein,Total,Total,Number,36475.0
+387,2012,Norway,Total,Total,Number,4985870.0
+388,2012,Switzerland,Total,Total,Number,7954662.0
+389,2012,Montenegro,Total,Total,Number,620308.0
+390,2012,"Former Yugoslav Republic of Macedonia, the",Total,Total,Number,2059794.0
+391,2012,Albania,Total,Total,Number,
+392,2012,Serbia,Total,Total,Number,7216649.0
+393,2012,Turkey,Total,Total,Number,74724269.0
+394,2012,Andorra,Total,Total,Number,78115.0
+395,2012,Belarus,Total,Total,Number,9465150.0
+396,2012,Bosnia and Herzegovina,Total,Total,Number,3839265.0
+397,2012,Kosovo (under United Nations Security Council Resolution 1244/99),Total,Total,Number,
+398,2012,Moldova,Total,Total,Number,3559541.0
+399,2012,Monaco,Total,Total,Number,
+400,2012,Russia,Total,Total,Number,143056383.0
+401,2012,San Marino,Total,Total,Number,33376.0
+402,2012,Ukraine,Total,Total,Number,45453282.0
+403,2012,Armenia,Total,Total,Number,3274285.0
+404,2012,Azerbaijan,Total,Total,Number,9235085.0
+405,2012,Georgia,Total,Total,Number,4497617.0
+406,2013,European Union (28 countries),Total,Total,Number,505166839.0
+407,2013,European Union (27 countries),Total,Total,Number,500904699.0
+408,2013,Euro area (19 countries),Total,Total,Number,336048797.0
+409,2013,Euro area (18 countries),Total,Total,Number,333076892.0
+410,2013,Belgium,Total,Total,Number,11161642.0
+411,2013,Bulgaria,Total,Total,Number,7284552.0
+412,2013,Czech Republic,Total,Total,Number,10516125.0
+413,2013,Denmark,Total,Total,Number,5602628.0
+414,2013,Germany (until 1990 former territory of the FRG),Total,Total,Number,80523746.0
+415,2013,Germany (including former GDR),Total,Total,Number,80523746.0
+416,2013,Estonia,Total,Total,Number,1320174.0
+417,2013,Ireland,Total,Total,Number,4591087.0
+418,2013,Greece,Total,Total,Number,11003615.0
+419,2013,Spain,Total,Total,Number,46727890.0
+420,2013,France,Total,Total,Number,65600350.0
+421,2013,France (metropolitan),Total,Total,Number,63697865.0
+422,2013,Croatia,Total,Total,Number,4262140.0
+423,2013,Italy,Total,Total,Number,59685227.0
+424,2013,Cyprus,Total,Total,Number,865878.0
+425,2013,Latvia,Total,Total,Number,2023825.0
+426,2013,Lithuania,Total,Total,Number,2971905.0
+427,2013,Luxembourg,Total,Total,Number,537039.0
+428,2013,Hungary,Total,Total,Number,9908798.0
+429,2013,Malta,Total,Total,Number,421364.0
+430,2013,Netherlands,Total,Total,Number,16779575.0
+431,2013,Austria,Total,Total,Number,8451860.0
+432,2013,Poland,Total,Total,Number,38062535.0
+433,2013,Portugal,Total,Total,Number,10487289.0
+434,2013,Romania,Total,Total,Number,20020074.0
+435,2013,Slovenia,Total,Total,Number,2058821.0
+436,2013,Slovakia,Total,Total,Number,5410836.0
+437,2013,Finland,Total,Total,Number,5426674.0
+438,2013,Sweden,Total,Total,Number,9555893.0
+439,2013,United Kingdom,Total,Total,Number,63905297.0
+440,2013,"European Economic Area (EU-28 plus IS, LI, NO)",Total,Total,Number,510576809.0
+441,2013,"European Economic Area (EU-27 plus IS, LI, NO)",Total,Total,Number,506314669.0
+442,2013,European Free Trade Association,Total,Total,Number,13449030.0
+443,2013,Iceland,Total,Total,Number,321857.0
+444,2013,Liechtenstein,Total,Total,Number,36838.0
+445,2013,Norway,Total,Total,Number,5051275.0
+446,2013,Switzerland,Total,Total,Number,8039060.0
+447,2013,Montenegro,Total,Total,Number,620893.0
+448,2013,"Former Yugoslav Republic of Macedonia, the",Total,Total,Number,2062294.0
+449,2013,Albania,Total,Total,Number,
+450,2013,Serbia,Total,Total,Number,7181505.0
+451,2013,Turkey,Total,Total,Number,75627384.0
+452,2013,Andorra,Total,Total,Number,76246.0
+453,2013,Belarus,Total,Total,Number,9463840.0
+454,2013,Bosnia and Herzegovina,Total,Total,Number,
+455,2013,Kosovo (under United Nations Security Council Resolution 1244/99),Total,Total,Number,
+456,2013,Moldova,Total,Total,Number,3559497.0
+457,2013,Monaco,Total,Total,Number,
+458,2013,Russia,Total,Total,Number,
+459,2013,San Marino,Total,Total,Number,33562.0
+460,2013,Ukraine,Total,Total,Number,45372692.0
+461,2013,Armenia,Total,Total,Number,
+462,2013,Azerbaijan,Total,Total,Number,9356483.0
+463,2013,Georgia,Total,Total,Number,
+464,2014,European Union (28 countries),Total,Total,Number,506944075.0
+465,2014,European Union (27 countries),Total,Total,Number,502697266.0
+466,2014,Euro area (19 countries),Total,Total,Number,337473384.0
+467,2014,Euro area (18 countries),Total,Total,Number,334529912.0
+468,2014,Belgium,Total,Total,Number,11203992.0
+469,2014,Bulgaria,Total,Total,Number,7245677.0
+470,2014,Czech Republic,Total,Total,Number,10512419.0
+471,2014,Denmark,Total,Total,Number,5627235.0
+472,2014,Germany (until 1990 former territory of the FRG),Total,Total,Number,80767463.0
+473,2014,Germany (including former GDR),Total,Total,Number,80767463.0
+474,2014,Estonia,Total,Total,Number,1315819.0
+475,2014,Ireland,Total,Total,Number,4605501.0
+476,2014,Greece,Total,Total,Number,10926807.0
+477,2014,Spain,Total,Total,Number,46512199.0
+478,2014,France,Total,Total,Number,65889148.0
+479,2014,France (metropolitan),Total,Total,Number,
+480,2014,Croatia,Total,Total,Number,4246809.0
+481,2014,Italy,Total,Total,Number,60782668.0
+482,2014,Cyprus,Total,Total,Number,858000.0
+483,2014,Latvia,Total,Total,Number,2001468.0
+484,2014,Lithuania,Total,Total,Number,2943472.0
+485,2014,Luxembourg,Total,Total,Number,549680.0
+486,2014,Hungary,Total,Total,Number,9877365.0
+487,2014,Malta,Total,Total,Number,425384.0
+488,2014,Netherlands,Total,Total,Number,16829289.0
+489,2014,Austria,Total,Total,Number,8506889.0
+490,2014,Poland,Total,Total,Number,38017856.0
+491,2014,Portugal,Total,Total,Number,10427301.0
+492,2014,Romania,Total,Total,Number,19947311.0
+493,2014,Slovenia,Total,Total,Number,2061085.0
+494,2014,Slovakia,Total,Total,Number,5415949.0
+495,2014,Finland,Total,Total,Number,5451270.0
+496,2014,Sweden,Total,Total,Number,9644864.0
+497,2014,United Kingdom,Total,Total,Number,64351155.0
+498,2014,"European Economic Area (EU-28 plus IS, LI, NO)",Total,Total,Number,512414845.0
+499,2014,"European Economic Area (EU-27 plus IS, LI, NO)",Total,Total,Number,508168036.0
+500,2014,European Free Trade Association,Total,Total,Number,13610401.0
+501,2014,Iceland,Total,Total,Number,325671.0
+502,2014,Liechtenstein,Total,Total,Number,37129.0
+503,2014,Norway,Total,Total,Number,5107970.0
+504,2014,Switzerland,Total,Total,Number,8139631.0
+505,2014,Montenegro,Total,Total,Number,621521.0
+506,2014,"Former Yugoslav Republic of Macedonia, the",Total,Total,Number,2065769.0
+507,2014,Albania,Total,Total,Number,2895947.0
+508,2014,Serbia,Total,Total,Number,7146759.0
+509,2014,Turkey,Total,Total,Number,76667864.0
+510,2014,Andorra,Total,Total,Number,
+511,2014,Belarus,Total,Total,Number,9468154.0
+512,2014,Bosnia and Herzegovina,Total,Total,Number,
+513,2014,Kosovo (under United Nations Security Council Resolution 1244/99),Total,Total,Number,
+514,2014,Moldova,Total,Total,Number,3557634.0
+515,2014,Monaco,Total,Total,Number,
+516,2014,Russia,Total,Total,Number,143666931.0
+517,2014,San Marino,Total,Total,Number,
+518,2014,Ukraine,Total,Total,Number,45245894.0
+519,2014,Armenia,Total,Total,Number,
+520,2014,Azerbaijan,Total,Total,Number,9477119.0
+521,2014,Georgia,Total,Total,Number,4490498.0
+522,2015,European Union (28 countries),Total,Total,Number,508401408.0
+523,2015,European Union (27 countries),Total,Total,Number,504176092.0
+524,2015,Euro area (19 countries),Total,Total,Number,338421552.0
+525,2015,Euro area (18 countries),Total,Total,Number,335500290.0
+526,2015,Belgium,Total,Total,Number,11208986.0
+527,2015,Bulgaria,Total,Total,Number,7202198.0
+528,2015,Czech Republic,Total,Total,Number,10538275.0
+529,2015,Denmark,Total,Total,Number,5659715.0
+530,2015,Germany (until 1990 former territory of the FRG),Total,Total,Number,81197537.0
+531,2015,Germany (including former GDR),Total,Total,Number,81197537.0
+532,2015,Estonia,Total,Total,Number,1313271.0
+533,2015,Ireland,Total,Total,Number,4628949.0
+534,2015,Greece,Total,Total,Number,10858018.0
+535,2015,Spain,Total,Total,Number,46449565.0
+536,2015,France,Total,Total,Number,66415161.0
+537,2015,France (metropolitan),Total,Total,Number,
+538,2015,Croatia,Total,Total,Number,4225316.0
+539,2015,Italy,Total,Total,Number,60795612.0
+540,2015,Cyprus,Total,Total,Number,847008.0
+541,2015,Latvia,Total,Total,Number,1986096.0
+542,2015,Lithuania,Total,Total,Number,2921262.0
+543,2015,Luxembourg,Total,Total,Number,562958.0
+544,2015,Hungary,Total,Total,Number,9855571.0
+545,2015,Malta,Total,Total,Number,429344.0
+546,2015,Netherlands,Total,Total,Number,16900726.0
+547,2015,Austria,Total,Total,Number,8576261.0
+548,2015,Poland,Total,Total,Number,38005614.0
+549,2015,Portugal,Total,Total,Number,10374822.0
+550,2015,Romania,Total,Total,Number,19870647.0
+551,2015,Slovenia,Total,Total,Number,2062874.0
+552,2015,Slovakia,Total,Total,Number,5421349.0
+553,2015,Finland,Total,Total,Number,5471753.0
+554,2015,Sweden,Total,Total,Number,9747355.0
+555,2015,United Kingdom,Total,Total,Number,64875165.0
+556,2015,"European Economic Area (EU-28 plus IS, LI, NO)",Total,Total,Number,513934367.0
+557,2015,"European Economic Area (EU-27 plus IS, LI, NO)",Total,Total,Number,509709051.0
+558,2015,European Free Trade Association,Total,Total,Number,13770625.0
+559,2015,Iceland,Total,Total,Number,329100.0
+560,2015,Liechtenstein,Total,Total,Number,37366.0
+561,2015,Norway,Total,Total,Number,5166493.0
+562,2015,Switzerland,Total,Total,Number,8237666.0
+563,2015,Montenegro,Total,Total,Number,622099.0
+564,2015,"Former Yugoslav Republic of Macedonia, the",Total,Total,Number,2069172.0
+565,2015,Albania,Total,Total,Number,2892302.0
+566,2015,Serbia,Total,Total,Number,7114393.0
+567,2015,Turkey,Total,Total,Number,77695904.0
+568,2015,Andorra,Total,Total,Number,
+569,2015,Belarus,Total,Total,Number,9480868.0
+570,2015,Bosnia and Herzegovina,Total,Total,Number,
+571,2015,Kosovo (under United Nations Security Council Resolution 1244/99),Total,Total,Number,
+572,2015,Moldova,Total,Total,Number,3555159.0
+573,2015,Monaco,Total,Total,Number,
+574,2015,Russia,Total,Total,Number,
+575,2015,San Marino,Total,Total,Number,
+576,2015,Ukraine,Total,Total,Number,42759661.0
+577,2015,Armenia,Total,Total,Number,3010598.0
+578,2015,Azerbaijan,Total,Total,Number,9593038.0
+579,2015,Georgia,Total,Total,Number,3729500.0

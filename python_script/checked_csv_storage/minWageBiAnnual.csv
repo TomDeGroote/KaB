@@ -1,0 +1,815 @@
+,TIME,GEO,CURRENCY,Value
+0,,Belgium,Euro,1234.0
+1,,Bulgaria,Euro,81.79
+2,,Czech Republic,Euro,261.03
+3,,Denmark,Euro,
+4,,Germany (until 1990 former territory of the FRG),Euro,
+5,,Estonia,Euro,191.73
+6,,Ireland,Euro,1292.85
+7,,Greece,Euro,709.71
+8,,Spain,Euro,631.05
+9,,France,Euro,1217.88
+10,,Croatia,Euro,
+11,,Italy,Euro,
+12,,Cyprus,Euro,
+13,,Latvia,Euro,129.27
+14,,Lithuania,Euro,159.29
+15,,Luxembourg,Euro,1503.42
+16,,Hungary,Euro,247.16
+17,,Malta,Euro,584.23
+18,,Netherlands,Euro,1272.6
+19,,Austria,Euro,
+20,,Poland,Euro,232.9
+21,,Portugal,Euro,449.98
+22,,Romania,Euro,89.67
+23,,Slovenia,Euro,511.9
+24,,Slovakia,Euro,182.15
+25,,Finland,Euro,
+26,,Sweden,Euro,
+27,,United Kingdom,Euro,1212.61
+28,,Iceland,Euro,
+29,,Norway,Euro,
+30,,Switzerland,Euro,
+31,,Montenegro,Euro,
+32,,"Former Yugoslav Republic of Macedonia, the",Euro,
+33,,Albania,Euro,
+34,,Serbia,Euro,
+35,,Turkey,Euro,333.46
+36,,United States,Euro,756.69
+37,,Belgium,Euro,1234.0
+38,,Bulgaria,Euro,81.81
+39,,Czech Republic,Euro,279.19
+40,,Denmark,Euro,
+41,,Germany (until 1990 former territory of the FRG),Euro,
+42,,Estonia,Euro,191.73
+43,,Ireland,Euro,1292.85
+44,,Greece,Euro,709.71
+45,,Spain,Euro,631.05
+46,,France,Euro,1254.28
+47,,Croatia,Euro,
+48,,Italy,Euro,
+49,,Cyprus,Euro,
+50,,Latvia,Euro,129.29
+51,,Lithuania,Euro,173.77
+52,,Luxembourg,Euro,1503.42
+53,,Hungary,Euro,220.58
+54,,Malta,Euro,584.23
+55,,Netherlands,Euro,1284.6
+56,,Austria,Euro,
+57,,Poland,Euro,221.72
+58,,Portugal,Euro,449.98
+59,,Romania,Euro,92.43
+60,,Slovenia,Euro,511.62
+61,,Slovakia,Euro,179.92
+62,,Finland,Euro,
+63,,Sweden,Euro,
+64,,United Kingdom,Euro,1200.69
+65,,Iceland,Euro,
+66,,Norway,Euro,
+67,,Switzerland,Euro,
+68,,Montenegro,Euro,
+69,,"Former Yugoslav Republic of Macedonia, the",Euro,
+70,,Albania,Euro,
+71,,Serbia,Euro,
+72,,Turkey,Euro,264.51
+73,,United States,Euro,702.17
+74,,Belgium,Euro,1259.0
+75,,Bulgaria,Euro,92.03
+76,,Czech Republic,Euro,291.07
+77,,Denmark,Euro,
+78,,Germany (until 1990 former territory of the FRG),Euro,
+79,,Estonia,Euro,230.08
+80,,Ireland,Euro,1402.7
+81,,Greece,Euro,730.3
+82,,Spain,Euro,665.7
+83,,France,Euro,1254.28
+84,,Croatia,Euro,
+85,,Italy,Euro,
+86,,Cyprus,Euro,
+87,,Latvia,Euro,172.12
+88,,Lithuania,Euro,173.77
+89,,Luxembourg,Euro,1570.28
+90,,Hungary,Euro,260.16
+91,,Malta,Euro,601.91
+92,,Netherlands,Euro,1300.8
+93,,Austria,Euro,
+94,,Poland,Euro,244.32
+95,,Portugal,Euro,470.17
+96,,Romania,Euro,115.27
+97,,Slovenia,Euro,521.8
+98,,Slovakia,Euro,220.71
+99,,Finland,Euro,
+100,,Sweden,Euro,
+101,,United Kingdom,Euro,1314.97
+102,,Iceland,Euro,
+103,,Norway,Euro,
+104,,Switzerland,Euro,
+105,,Montenegro,Euro,
+106,,"Former Yugoslav Republic of Macedonia, the",Euro,
+107,,Albania,Euro,
+108,,Serbia,Euro,
+109,,Turkey,Euro,301.77
+110,,United States,Euro,677.81
+111,,Belgium,Euro,1283.0
+112,,Bulgaria,Euro,92.03
+113,,Czech Republic,Euro,278.57
+114,,Denmark,Euro,
+115,,Germany (until 1990 former territory of the FRG),Euro,
+116,,Estonia,Euro,230.08
+117,,Ireland,Euro,1461.85
+118,,Greece,Euro,767.55
+119,,Spain,Euro,665.7
+120,,France,Euro,1280.07
+121,,Croatia,Euro,
+122,,Italy,Euro,
+123,,Cyprus,Euro,
+124,,Latvia,Euro,172.34
+125,,Lithuania,Euro,202.73
+126,,Luxembourg,Euro,1570.28
+127,,Hungary,Euro,266.1
+128,,Malta,Euro,601.91
+129,,Netherlands,Euro,1317.0
+130,,Austria,Euro,
+131,,Poland,Euro,248.43
+132,,Portugal,Euro,470.17
+133,,Romania,Euro,124.44
+134,,Slovenia,Euro,521.8
+135,,Slovakia,Euro,225.96
+136,,Finland,Euro,
+137,,Sweden,Euro,
+138,,United Kingdom,Euro,1310.09
+139,,Iceland,Euro,
+140,,Norway,Euro,
+141,,Switzerland,Euro,
+142,,Montenegro,Euro,
+143,,"Former Yugoslav Republic of Macedonia, the",Euro,
+144,,Albania,Euro,
+145,,Serbia,Euro,
+146,,Turkey,Euro,329.76
+147,,United States,Euro,660.99
+148,,Belgium,Euro,1309.6
+149,,Bulgaria,Euro,112.49
+150,,Czech Republic,Euro,300.44
+151,,Denmark,Euro,
+152,,Germany (until 1990 former territory of the FRG),Euro,
+153,,Estonia,Euro,278.02
+154,,Ireland,Euro,1461.85
+155,,Greece,Euro,794.02
+156,,Spain,Euro,700.0
+157,,France,Euro,1280.07
+158,,Croatia,Euro,
+159,,Italy,Euro,
+160,,Cyprus,Euro,
+161,,Latvia,Euro,229.75
+162,,Lithuania,Euro,231.7
+163,,Luxembourg,Euro,1570.28
+164,,Hungary,Euro,271.94
+165,,Malta,Euro,617.21
+166,,Netherlands,Euro,1335.0
+167,,Austria,Euro,
+168,,Poland,Euro,313.34
+169,,Portugal,Euro,497.0
+170,,Romania,Euro,138.59
+171,,Slovenia,Euro,538.53
+172,,Slovakia,Euro,241.19
+173,,Finland,Euro,
+174,,Sweden,Euro,
+175,,United Kingdom,Euro,1242.24
+176,,Iceland,Euro,
+177,,Norway,Euro,
+178,,Switzerland,Euro,
+179,,Montenegro,Euro,
+180,,"Former Yugoslav Republic of Macedonia, the",Euro,
+181,,Albania,Euro,
+182,,Serbia,Euro,
+183,,Turkey,Euro,354.34
+184,,United States,Euro,688.81
+185,,Belgium,Euro,1335.8
+186,,Bulgaria,Euro,112.49
+187,,Czech Republic,Euro,334.83
+188,,Denmark,Euro,
+189,,Germany (until 1990 former territory of the FRG),Euro,
+190,,Estonia,Euro,278.02
+191,,Ireland,Euro,1461.85
+192,,Greece,Euro,794.02
+193,,Spain,Euro,700.0
+194,,France,Euro,1321.02
+195,,Croatia,Euro,379.6
+196,,Italy,Euro,
+197,,Cyprus,Euro,
+198,,Latvia,Euro,227.05
+199,,Lithuania,Euro,231.7
+200,,Luxembourg,Euro,1609.53
+201,,Hungary,Euro,293.08
+202,,Malta,Euro,617.21
+203,,Netherlands,Euro,1356.6
+204,,Austria,Euro,
+205,,Poland,Euro,335.99
+206,,Portugal,Euro,497.0
+207,,Romania,Euro,137.31
+208,,Slovenia,Euro,566.5
+209,,Slovakia,Euro,268.17
+210,,Finland,Euro,
+211,,Sweden,Euro,
+212,,United Kingdom,Euro,1149.89
+213,,Iceland,Euro,
+214,,Norway,Euro,
+215,,Switzerland,Euro,
+216,,Montenegro,Euro,
+217,,"Former Yugoslav Republic of Macedonia, the",Euro,
+218,,Albania,Euro,
+219,,Serbia,Euro,
+220,,Turkey,Euro,330.54
+221,,United States,Euro,643.24
+222,,Belgium,Euro,1387.5
+223,,Bulgaria,Euro,122.71
+224,,Czech Republic,Euro,297.67
+225,,Denmark,Euro,
+226,,Germany (until 1990 former territory of the FRG),Euro,
+227,,Estonia,Euro,278.02
+228,,Ireland,Euro,1461.85
+229,,Greece,Euro,817.83
+230,,Spain,Euro,728.0
+231,,France,Euro,1321.02
+232,,Croatia,Euro,373.46
+233,,Italy,Euro,
+234,,Cyprus,Euro,
+235,,Latvia,Euro,254.13
+236,,Lithuania,Euro,231.7
+237,,Luxembourg,Euro,1641.74
+238,,Hungary,Euro,268.09
+239,,Malta,Euro,634.88
+240,,Netherlands,Euro,1381.2
+241,,Austria,Euro,
+242,,Poland,Euro,307.21
+243,,Portugal,Euro,525.0
+244,,Romania,Euro,149.16
+245,,Slovenia,Euro,589.19
+246,,Slovakia,Euro,295.5
+247,,Finland,Euro,
+248,,Sweden,Euro,
+249,,United Kingdom,Euro,995.28
+250,,Iceland,Euro,
+251,,Norway,Euro,
+252,,Switzerland,Euro,
+253,,Montenegro,Euro,
+254,,"Former Yugoslav Republic of Macedonia, the",Euro,
+255,,Albania,Euro,
+256,,Serbia,Euro,
+257,,Turkey,Euro,309.94
+258,,United States,Euro,815.79
+259,,Belgium,Euro,1387.5
+260,,Bulgaria,Euro,122.71
+261,,Czech Republic,Euro,309.1
+262,,Denmark,Euro,
+263,,Germany (until 1990 former territory of the FRG),Euro,
+264,,Estonia,Euro,278.02
+265,,Ireland,Euro,1461.85
+266,,Greece,Euro,862.82
+267,,Spain,Euro,728.0
+268,,France,Euro,1337.7
+269,,Croatia,Euro,386.91
+270,,Italy,Euro,
+271,,Cyprus,Euro,
+272,,Latvia,Euro,255.83
+273,,Lithuania,Euro,231.7
+274,,Luxembourg,Euro,1682.76
+275,,Hungary,Euro,263.3
+276,,Malta,Euro,634.88
+277,,Netherlands,Euro,1398.6
+278,,Austria,Euro,
+279,,Poland,Euro,286.61
+280,,Portugal,Euro,525.0
+281,,Romania,Euro,142.61
+282,,Slovenia,Euro,589.19
+283,,Slovakia,Euro,295.5
+284,,Finland,Euro,
+285,,Sweden,Euro,
+286,,United Kingdom,Euro,1112.55
+287,,Iceland,Euro,
+288,,Norway,Euro,
+289,,Switzerland,Euro,
+290,,Montenegro,Euro,
+291,,"Former Yugoslav Republic of Macedonia, the",Euro,
+292,,Albania,Euro,
+293,,Serbia,Euro,
+294,,Turkey,Euro,320.81
+295,,United States,Euro,803.26
+296,,Belgium,Euro,1387.5
+297,,Bulgaria,Euro,122.71
+298,,Czech Republic,Euro,302.19
+299,,Denmark,Euro,
+300,,Germany (until 1990 former territory of the FRG),Euro,
+301,,Estonia,Euro,278.02
+302,,Ireland,Euro,1461.85
+303,,Greece,Euro,862.82
+304,,Spain,Euro,738.85
+305,,France,Euro,1343.77
+306,,Croatia,Euro,385.48
+307,,Italy,Euro,
+308,,Cyprus,Euro,
+309,,Latvia,Euro,253.77
+310,,Lithuania,Euro,231.7
+311,,Luxembourg,Euro,1682.76
+312,,Hungary,Euro,271.8
+313,,Malta,Euro,659.92
+314,,Netherlands,Euro,1407.6
+315,,Austria,Euro,
+316,,Poland,Euro,320.87
+317,,Portugal,Euro,554.17
+318,,Romania,Euro,141.63
+319,,Slovenia,Euro,597.43
+320,,Slovakia,Euro,307.7
+321,,Finland,Euro,
+322,,Sweden,Euro,
+323,,United Kingdom,Euro,1076.46
+324,,Iceland,Euro,
+325,,Norway,Euro,
+326,,Switzerland,Euro,
+327,,Montenegro,Euro,
+328,,"Former Yugoslav Republic of Macedonia, the",Euro,
+329,,Albania,Euro,
+330,,Serbia,Euro,
+331,,Turkey,Euro,338.33
+332,,United States,Euro,872.32
+333,,Belgium,Euro,1387.5
+334,,Bulgaria,Euro,122.71
+335,,Czech Republic,Euro,311.39
+336,,Denmark,Euro,
+337,,Germany (until 1990 former territory of the FRG),Euro,
+338,,Estonia,Euro,278.02
+339,,Ireland,Euro,1461.85
+340,,Greece,Euro,862.82
+341,,Spain,Euro,738.85
+342,,France,Euro,1343.77
+343,,Croatia,Euro,390.94
+344,,Italy,Euro,
+345,,Cyprus,Euro,
+346,,Latvia,Euro,253.77
+347,,Lithuania,Euro,231.7
+348,,Luxembourg,Euro,1724.81
+349,,Hungary,Euro,256.99
+350,,Malta,Euro,659.92
+351,,Netherlands,Euro,1416.0
+352,,Austria,Euro,
+353,,Poland,Euro,317.58
+354,,Portugal,Euro,554.17
+355,,Romania,Euro,137.3
+356,,Slovenia,Euro,734.15
+357,,Slovakia,Euro,307.7
+358,,Finland,Euro,
+359,,Sweden,Euro,
+360,,United Kingdom,Euro,1169.49
+361,,Iceland,Euro,
+362,,Norway,Euro,
+363,,Switzerland,Euro,
+364,,Montenegro,Euro,
+365,,"Former Yugoslav Republic of Macedonia, the",Euro,
+366,,Albania,Euro,
+367,,Serbia,Euro,
+368,,Turkey,Euro,392.01
+369,,United States,Euro,1024.09
+370,,Belgium,Euro,1415.24
+371,,Bulgaria,Euro,122.71
+372,,Czech Republic,Euro,319.22
+373,,Denmark,Euro,
+374,,Germany (until 1990 former territory of the FRG),Euro,
+375,,Estonia,Euro,278.02
+376,,Ireland,Euro,1461.85
+377,,Greece,Euro,862.82
+378,,Spain,Euro,748.3
+379,,France,Euro,1365.0
+380,,Croatia,Euro,381.15
+381,,Italy,Euro,
+382,,Cyprus,Euro,
+383,,Latvia,Euro,281.93
+384,,Lithuania,Euro,231.7
+385,,Luxembourg,Euro,1757.56
+386,,Hungary,Euro,280.63
+387,,Malta,Euro,664.95
+388,,Netherlands,Euro,1424.4
+389,,Austria,Euro,
+390,,Poland,Euro,348.68
+391,,Portugal,Euro,565.83
+392,,Romania,Euro,157.2
+393,,Slovenia,Euro,748.1
+394,,Slovakia,Euro,317.0
+395,,Finland,Euro,
+396,,Sweden,Euro,
+397,,United Kingdom,Euro,1136.22
+398,,Iceland,Euro,
+399,,Norway,Euro,
+400,,Switzerland,Euro,
+401,,Montenegro,Euro,
+402,,"Former Yugoslav Republic of Macedonia, the",Euro,
+403,,Albania,Euro,
+404,,Serbia,Euro,
+405,,Turkey,Euro,384.89
+406,,United States,Euro,940.48
+407,,Belgium,Euro,1443.54
+408,,Bulgaria,Euro,122.71
+409,,Czech Republic,Euro,328.61
+410,,Denmark,Euro,
+411,,Germany (until 1990 former territory of the FRG),Euro,
+412,,Estonia,Euro,278.02
+413,,Ireland,Euro,1461.85
+414,,Greece,Euro,876.62
+415,,Spain,Euro,748.3
+416,,France,Euro,1365.0
+417,,Croatia,Euro,380.18
+418,,Italy,Euro,
+419,,Cyprus,Euro,
+420,,Latvia,Euro,281.97
+421,,Lithuania,Euro,231.7
+422,,Luxembourg,Euro,1757.56
+423,,Hungary,Euro,293.11
+424,,Malta,Euro,664.95
+425,,Netherlands,Euro,1435.2
+426,,Austria,Euro,
+427,,Poland,Euro,347.34
+428,,Portugal,Euro,565.83
+429,,Romania,Euro,157.89
+430,,Slovenia,Euro,748.1
+431,,Slovakia,Euro,317.0
+432,,Finland,Euro,
+433,,Sweden,Euro,
+434,,United Kingdom,Euro,1083.6
+435,,Iceland,Euro,
+436,,Norway,Euro,
+437,,Switzerland,Euro,
+438,,Montenegro,Euro,
+439,,"Former Yugoslav Republic of Macedonia, the",Euro,
+440,,Albania,Euro,
+441,,Serbia,Euro,
+442,,Turkey,Euro,356.17
+443,,United States,Euro,869.48
+444,,Belgium,Euro,1443.54
+445,,Bulgaria,Euro,138.05
+446,,Czech Republic,Euro,310.23
+447,,Denmark,Euro,
+448,,Germany (until 1990 former territory of the FRG),Euro,
+449,,Estonia,Euro,290.0
+450,,Ireland,Euro,1461.85
+451,,Greece,Euro,876.62
+452,,Spain,Euro,748.3
+453,,France,Euro,1398.37
+454,,Croatia,Euro,373.36
+455,,Italy,Euro,
+456,,Cyprus,Euro,
+457,,Latvia,Euro,285.92
+458,,Lithuania,Euro,231.7
+459,,Luxembourg,Euro,1801.49
+460,,Hungary,Euro,295.63
+461,,Malta,Euro,685.14
+462,,Netherlands,Euro,1446.6
+463,,Austria,Euro,
+464,,Poland,Euro,336.47
+465,,Portugal,Euro,565.83
+466,,Romania,Euro,161.91
+467,,Slovenia,Euro,763.06
+468,,Slovakia,Euro,327.0
+469,,Finland,Euro,
+470,,Sweden,Euro,
+471,,United Kingdom,Euro,1201.96
+472,,Iceland,Euro,
+473,,Norway,Euro,
+474,,Switzerland,Euro,
+475,,Montenegro,Euro,
+476,,"Former Yugoslav Republic of Macedonia, the",Euro,
+477,,Albania,Euro,
+478,,Serbia,Euro,
+479,,Turkey,Euro,362.84
+480,,United States,Euro,971.22
+481,,Belgium,Euro,1472.42
+482,,Bulgaria,Euro,148.28
+483,,Czech Republic,Euro,312.01
+484,,Denmark,Euro,
+485,,Germany (until 1990 former territory of the FRG),Euro,
+486,,Estonia,Euro,290.0
+487,,Ireland,Euro,1461.85
+488,,Greece,Euro,683.76
+489,,Spain,Euro,748.3
+490,,France,Euro,1425.67
+491,,Croatia,Euro,374.31
+492,,Italy,Euro,
+493,,Cyprus,Euro,
+494,,Latvia,Euro,287.07
+495,,Lithuania,Euro,231.7
+496,,Luxembourg,Euro,1801.49
+497,,Hungary,Euro,323.17
+498,,Malta,Euro,685.14
+499,,Netherlands,Euro,1456.2
+500,,Austria,Euro,
+501,,Poland,Euro,353.04
+502,,Portugal,Euro,565.83
+503,,Romania,Euro,157.26
+504,,Slovenia,Euro,763.06
+505,,Slovakia,Euro,327.0
+506,,Finland,Euro,
+507,,Sweden,Euro,
+508,,United Kingdom,Euro,1244.42
+509,,Iceland,Euro,
+510,,Norway,Euro,
+511,,Switzerland,Euro,
+512,,Montenegro,Euro,
+513,,"Former Yugoslav Republic of Macedonia, the",Euro,
+514,,Albania,Euro,
+515,,Serbia,Euro,234.9
+516,,Turkey,Euro,411.89
+517,,United States,Euro,998.15
+518,,Belgium,Euro,1501.82
+519,,Bulgaria,Euro,158.5
+520,,Czech Republic,Euro,318.08
+521,,Denmark,Euro,
+522,,Germany (until 1990 former territory of the FRG),Euro,
+523,,Estonia,Euro,320.0
+524,,Ireland,Euro,1461.85
+525,,Greece,Euro,683.76
+526,,Spain,Euro,752.85
+527,,France,Euro,1430.22
+528,,Croatia,Euro,372.35
+529,,Italy,Euro,
+530,,Cyprus,Euro,
+531,,Latvia,Euro,286.66
+532,,Lithuania,Euro,289.62
+533,,Luxembourg,Euro,1874.19
+534,,Hungary,Euro,335.27
+535,,Malta,Euro,702.82
+536,,Netherlands,Euro,1469.4
+537,,Austria,Euro,
+538,,Poland,Euro,392.73
+539,,Portugal,Euro,565.83
+540,,Romania,Euro,157.5
+541,,Slovenia,Euro,783.66
+542,,Slovakia,Euro,337.7
+543,,Finland,Euro,
+544,,Sweden,Euro,
+545,,United Kingdom,Euro,1249.85
+546,,Iceland,Euro,
+547,,Norway,Euro,
+548,,Switzerland,Euro,
+549,,Montenegro,Euro,
+550,,"Former Yugoslav Republic of Macedonia, the",Euro,199.48
+551,,Albania,Euro,
+552,,Serbia,Euro,239.24
+553,,Turkey,Euro,415.52
+554,,United States,Euro,952.46
+555,,Belgium,Euro,1501.82
+556,,Bulgaria,Euro,158.5
+557,,Czech Republic,Euro,308.3
+558,,Denmark,Euro,
+559,,Germany (until 1990 former territory of the FRG),Euro,
+560,,Estonia,Euro,320.0
+561,,Ireland,Euro,1461.85
+562,,Greece,Euro,683.76
+563,,Spain,Euro,752.85
+564,,France,Euro,1430.22
+565,,Croatia,Euro,400.67
+566,,Italy,Euro,
+567,,Cyprus,Euro,
+568,,Latvia,Euro,284.74
+569,,Lithuania,Euro,289.62
+570,,Luxembourg,Euro,1874.19
+571,,Hungary,Euro,332.37
+572,,Malta,Euro,702.82
+573,,Netherlands,Euro,1477.8
+574,,Austria,Euro,
+575,,Poland,Euro,368.87
+576,,Portugal,Euro,565.83
+577,,Romania,Euro,179.36
+578,,Slovenia,Euro,783.66
+579,,Slovakia,Euro,337.7
+580,,Finland,Euro,
+581,,Sweden,Euro,
+582,,United Kingdom,Euro,1189.92
+583,,Iceland,Euro,
+584,,Norway,Euro,
+585,,Switzerland,Euro,
+586,,Montenegro,Euro,288.05
+587,,"Former Yugoslav Republic of Macedonia, the",Euro,198.95
+588,,Albania,Euro,
+589,,Serbia,Euro,236.28
+590,,Turkey,Euro,405.2
+591,,United States,Euro,960.76
+592,,Belgium,Euro,1501.82
+593,,Bulgaria,Euro,173.84
+594,,Czech Republic,Euro,309.91
+595,,Denmark,Euro,
+596,,Germany (until 1990 former territory of the FRG),Euro,
+597,,Estonia,Euro,355.0
+598,,Ireland,Euro,1461.85
+599,,Greece,Euro,683.76
+600,,Spain,Euro,752.85
+601,,France,Euro,1445.38
+602,,Croatia,Euro,395.67
+603,,Italy,Euro,
+604,,Cyprus,Euro,
+605,,Latvia,Euro,320.0
+606,,Lithuania,Euro,289.62
+607,,Luxembourg,Euro,1921.03
+608,,Hungary,Euro,341.7
+609,,Malta,Euro,717.95
+610,,Netherlands,Euro,1485.6
+611,,Austria,Euro,
+612,,Poland,Euro,404.4
+613,,Portugal,Euro,565.83
+614,,Romania,Euro,190.11
+615,,Slovenia,Euro,789.15
+616,,Slovakia,Euro,352.0
+617,,Finland,Euro,
+618,,Sweden,Euro,
+619,,United Kingdom,Euro,1251.05
+620,,Iceland,Euro,
+621,,Norway,Euro,
+622,,Switzerland,Euro,
+623,,Montenegro,Euro,288.05
+624,,"Former Yugoslav Republic of Macedonia, the",Euro,213.62
+625,,Albania,Euro,156.92
+626,,Serbia,Euro,235.31
+627,,Turkey,Euro,361.76
+628,,United States,Euro,911.22
+629,,Belgium,Euro,1501.82
+630,,Bulgaria,Euro,173.84
+631,,Czech Republic,Euro,309.62
+632,,Denmark,Euro,
+633,,Germany (until 1990 former territory of the FRG),Euro,
+634,,Estonia,Euro,355.0
+635,,Ireland,Euro,1461.85
+636,,Greece,Euro,683.76
+637,,Spain,Euro,752.85
+638,,France,Euro,1445.38
+639,,Croatia,Euro,398.31
+640,,Italy,Euro,
+641,,Cyprus,Euro,
+642,,Latvia,Euro,320.0
+643,,Lithuania,Euro,289.62
+644,,Luxembourg,Euro,1921.03
+645,,Hungary,Euro,328.16
+646,,Malta,Euro,717.95
+647,,Netherlands,Euro,1495.2
+648,,Austria,Euro,
+649,,Poland,Euro,404.16
+650,,Portugal,Euro,565.83
+651,,Romania,Euro,205.34
+652,,Slovenia,Euro,789.15
+653,,Slovakia,Euro,352.0
+654,,Finland,Euro,
+655,,Sweden,Euro,
+656,,United Kingdom,Euro,1301.31
+657,,Iceland,Euro,
+658,,Norway,Euro,
+659,,Switzerland,Euro,
+660,,Montenegro,Euro,288.05
+661,,"Former Yugoslav Republic of Macedonia, the",Euro,213.04
+662,,Albania,Euro,156.85
+663,,Serbia,Euro,232.9
+664,,Turkey,Euro,391.45
+665,,United States,Euro,920.1
+666,,Belgium,Euro,1501.82
+667,,Bulgaria,Euro,184.07
+668,,Czech Republic,Euro,331.71
+669,,Denmark,Euro,
+670,,Germany (until 1990 former territory of the FRG),Euro,1440.0
+671,,Estonia,Euro,390.0
+672,,Ireland,Euro,1461.85
+673,,Greece,Euro,683.76
+674,,Spain,Euro,756.7
+675,,France,Euro,1457.52
+676,,Croatia,Euro,395.61
+677,,Italy,Euro,
+678,,Cyprus,Euro,
+679,,Latvia,Euro,360.0
+680,,Lithuania,Euro,300.0
+681,,Luxembourg,Euro,1922.96
+682,,Hungary,Euro,332.76
+683,,Malta,Euro,720.46
+684,,Netherlands,Euro,1501.8
+685,,Austria,Euro,
+686,,Poland,Euro,409.53
+687,,Portugal,Euro,589.17
+688,,Romania,Euro,217.5
+689,,Slovenia,Euro,790.73
+690,,Slovakia,Euro,380.0
+691,,Finland,Euro,
+692,,Sweden,Euro,
+693,,United Kingdom,Euro,1378.87
+694,,Iceland,Euro,
+695,,Norway,Euro,
+696,,Switzerland,Euro,
+697,,Montenegro,Euro,288.05
+698,,"Former Yugoslav Republic of Macedonia, the",Euro,213.72
+699,,Albania,Euro,156.99
+700,,Serbia,Euro,235.05
+701,,Turkey,Euro,424.26
+702,,United States,Euro,1035.06
+703,,Belgium,Euro,1501.82
+704,,Bulgaria,Euro,194.29
+705,,Czech Republic,Euro,337.58
+706,,Denmark,Euro,
+707,,Germany (until 1990 former territory of the FRG),Euro,1440.0
+708,,Estonia,Euro,390.0
+709,,Ireland,Euro,1461.85
+710,,Greece,Euro,683.76
+711,,Spain,Euro,756.7
+712,,France,Euro,1457.52
+713,,Croatia,Euro,398.9
+714,,Italy,Euro,
+715,,Cyprus,Euro,
+716,,Latvia,Euro,360.0
+717,,Lithuania,Euro,325.0
+718,,Luxembourg,Euro,1922.96
+719,,Hungary,Euro,333.41
+720,,Malta,Euro,720.46
+721,,Netherlands,Euro,1507.8
+722,,Austria,Euro,
+723,,Poland,Euro,417.55
+724,,Portugal,Euro,589.17
+725,,Romania,Euro,234.77
+726,,Slovenia,Euro,790.73
+727,,Slovakia,Euro,380.0
+728,,Finland,Euro,
+729,,Sweden,Euro,
+730,,United Kingdom,Euro,1509.7
+731,,Iceland,Euro,
+732,,Norway,Euro,
+733,,Switzerland,Euro,
+734,,Montenegro,Euro,288.05
+735,,"Former Yugoslav Republic of Macedonia, the",Euro,226.69
+736,,Albania,Euro,156.82
+737,,Serbia,Euro,235.51
+738,,Turkey,Euro,425.17
+739,,United States,Euro,1123.13
+740,,Belgium,Euro,1501.82
+741,,Bulgaria,Euro,214.75
+742,,Czech Republic,Euro,366.35
+743,,Denmark,Euro,
+744,,Germany (until 1990 former territory of the FRG),Euro,1440.0
+745,,Estonia,Euro,430.0
+746,,Ireland,Euro,1546.35
+747,,Greece,Euro,683.76
+748,,Spain,Euro,764.4
+749,,France,Euro,1466.62
+750,,Croatia,Euro,408.48
+751,,Italy,Euro,
+752,,Cyprus,Euro,
+753,,Latvia,Euro,370.0
+754,,Lithuania,Euro,350.0
+755,,Luxembourg,Euro,1922.96
+756,,Hungary,Euro,351.29
+757,,Malta,Euro,728.04
+758,,Netherlands,Euro,1524.6
+759,,Austria,Euro,
+760,,Poland,Euro,433.88
+761,,Portugal,Euro,618.33
+762,,Romania,Euro,232.1
+763,,Slovenia,Euro,790.73
+764,,Slovakia,Euro,405.0
+765,,Finland,Euro,
+766,,Sweden,Euro,
+767,,United Kingdom,Euro,1512.36
+768,,Iceland,Euro,
+769,,Norway,Euro,
+770,,Switzerland,Euro,
+771,,Montenegro,Euro,288.05
+772,,"Former Yugoslav Republic of Macedonia, the",Euro,223.08
+773,,Albania,Euro,155.71
+774,,Serbia,Euro,233.57
+775,,Turkey,Euro,518.5
+776,,United States,Euro,1154.28
+777,,Belgium,Euro,1531.93
+778,,Bulgaria,Euro,214.75
+779,,Czech Republic,Euro,364.9
+780,,Denmark,Euro,
+781,,Germany (until 1990 former territory of the FRG),Euro,1440.0
+782,,Estonia,Euro,430.0
+783,,Ireland,Euro,1546.35
+784,,Greece,Euro,683.76
+785,,Spain,Euro,764.4
+786,,France,Euro,1466.62
+787,,Croatia,Euro,414.45
+788,,Italy,Euro,
+789,,Cyprus,Euro,
+790,,Latvia,Euro,370.0
+791,,Lithuania,Euro,380.0
+792,,Luxembourg,Euro,1922.96
+793,,Hungary,Euro,350.09
+794,,Malta,Euro,728.04
+795,,Netherlands,Euro,1537.2
+796,,Austria,Euro,
+797,,Poland,Euro,417.02
+798,,Portugal,Euro,
+799,,Romania,Euro,276.34
+800,,Slovenia,Euro,790.73
+801,,Slovakia,Euro,405.0
+802,,Finland,Euro,
+803,,Sweden,Euro,
+804,,United Kingdom,Euro,1343.01
+805,,Iceland,Euro,
+806,,Norway,Euro,
+807,,Switzerland,Euro,
+808,,Montenegro,Euro,288.05
+809,,"Former Yugoslav Republic of Macedonia, the",Euro,232.28
+810,,Albania,Euro,155.71
+811,,Serbia,Euro,233.37
+812,,Turkey,Euro,513.72
+813,,United States,Euro,
