@@ -1,10 +1,11 @@
 import os.path
 import pandas
 from vars import *
-from user_interaction import start_interaction
+import numpy as np
+import re
+from labeling_interaction import start_interaction
 
 
-# TODO convert using general labels
 # TODO wat als labels de rijen zijn en niet de kolommen => transpose, maar hoe herkennen
 # (gebruiker laten identificeren) en of zelf proberen
 # TODO wat als file start op een andere lijn
@@ -33,7 +34,7 @@ def start_process():
             print 'incorrect filename, please try again'
         # read one file
         else:
-            print 'Result: ' + str(process_csv(file_name, print_welcome))
+            print 'Result:\n' + str(process_csv(file_name, print_welcome))
         user_input = raw_input('Give csv name: ')
         print_welcome = False
 
@@ -45,9 +46,9 @@ def start_process():
 def process_csv(f, print_welcome):
     m = pandas.read_csv(f, sep=',')
     print '\nCurrently processing: ' + f + '\n'
-    general_label_dict = start_interaction(m, print_welcome)
-    convert(m, general_label_dict)
-    # TODO return the result so it can be printed in start_process method
+    # general_label_dict = start_interaction(m, print_welcome)
+    general_label_dict = {'Value': 'TEST', 'GEO': 'LOCATION', 'TIME': 'DATE'}
+    return convert(m, general_label_dict)
 
 
 # Searches for a possible set of labels. These labels can be in the first five rows, or in the first five columns
@@ -56,36 +57,43 @@ def transform_matrix(matrix):
     print 'not implemented yet'
 
 
+# Makes correct types of matrix, i.e. 20,001.5 is replaced by 20001.5, ; or : become NaN, dates become dates.
+def correct_types(matrix):
+    print 'not implemented yet'
+
+
 # Initial labels are replaced by their general labels, if the general label is 'None' the column will be thrown away.
 # Here sums etc are also calculated if the label contains an operator
 def convert(matrix, general_label_dict):
-    print general_label_dict
-
     # initialize the resulting matrix
-    # TODO
-    #index = get_years(matrix)
-    #columns =
+    index = matrix.index  # TODO make index the date?
+    columns = sorted(general_label_dict.values())
+    result = pandas.DataFrame(np.nan, index=index, columns=columns)
 
-    # copy data to correct columns
-    # TODO
+    # copy data to correct columns and execute operators (if included in label)
     for key in general_label_dict.keys():
-        labels = key.split('operator')  # TODO generic operator
-        column_result = matrix.iloc(labels[0])
+        labels = re.split(operators_regex, key)
+        column_result = matrix[labels[0]].copy()  # select first column of possibly composed columns
         i = 1
-        while i < len(labels):
-            label_part = labels[i]
-            operator = labels[i+1]
+        while i+1 < len(labels):
+            label_part = labels[i+1]
+            operator = labels[i]
             if operator == '+':
-                print 'not implemented yet'  # TODO
+                column_result += matrix[label_part]
             elif operator == '-':
-                print 'not implemented yet'  # TODO
+                column_result -= matrix[label_part]
             elif operator == '*':
-                print 'not implemented yet'  # TODO
+                column_result *= matrix[label_part]
             elif operator == '/':
-                print 'not implemented yet'  # TODO
+                column_result /= matrix[label_part]
             else:
                 print 'Error during conversion: invalid operator'  # TODO hoe nu verder?
             i += 2
+
+        general_label = general_label_dict[key]
+        result[general_label] = column_result
+
+    return result
 
 
 start_process()

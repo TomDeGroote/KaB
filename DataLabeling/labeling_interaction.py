@@ -58,7 +58,7 @@ def start_interaction(matrix, print_welcome):
             else:
                 # Add the label to the general labels and to the matching label file
                 # TODO checken of wel valid labels?
-                general_label_dict[l[0]] = l[1]  # add the given label to general labels
+                general_label_dict[l[0]] = l[1].upper()  # add the given label to general labels
                 if is_composed_label(l[0]):
                     add_to_composed_labels(l[0])
                 if not os.path.isfile(label_directory + l[1].lower()):
@@ -80,6 +80,7 @@ def is_composed_label(label):
 
 # Adds all labels used in a composed label (i.e. using operators) to the composed label dict
 def add_to_composed_labels(composed_label):
+    # TODO split with regex
     no_operator_str = composed_label
     for operator in operators:
         no_operator_str = no_operator_str.replace(operator, ',')
