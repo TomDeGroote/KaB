@@ -1,26 +1,28 @@
 import os.path
 from bcolors import bcolors
-from vars import label_directory
+from vars import label_directory, operators
 from commands import *
 
 # TODO als optie toevoegen ongekende labels toe te voegen
 # TODO operators enablen
+
+general_label_dict = {}
+composed_label_dict = {}
 
 
 # processes the input given by the user, at the end of the user interaction (when done is typed)
 # the result of general labels is returned
 def start_interaction(matrix, print_welcome):
     label_row = get_initial_matrix_labels(matrix)  # get the initial labels
-    general_labels = get_general_labels(label_row)  # get the general labels for the initial labels
+    add_labels_to_dicts(label_row)  # get the general labels for the initial labels
 
     initial_label_row = label_row
-    initial_general_labels = general_labels
 
     if print_welcome:
         # welcome the user using a welcome text
         print_welcome_text()
     # print the current labels and there general labels
-    show_labels(label_row, general_labels)
+    show_labels(label_row)
     print ''
 
     # wait for input and process it
@@ -41,11 +43,13 @@ def start_interaction(matrix, print_welcome):
                     remove_label(l[1], l[2])
                 elif l[0] == 'show':
                     if l[1] == 'initial':
-                        show_labels(initial_label_row, initial_general_labels)
+                        show_labels(initial_label_row)
                     elif l[1] == 'labels':
-                        show_labels(label_row, general_labels)
+                        show_labels(label_row)
                     elif l[1] == 'general':
-                        print general_labels
+                        show_general_label_dict()
+                    elif l[1] == 'composed':
+                        print composed_label_dict
                     else:
                         show_invalid_command()
                 elif l[0] == 'format':
@@ -53,20 +57,35 @@ def start_interaction(matrix, print_welcome):
 
             else:
                 # Add the label to the general labels and to the matching label file
-                if l[0] not in label_row:
-                    show_invalid_command()
+                # TODO checken of wel valid labels?
+                general_label_dict[l[0]] = l[1]  # add the given label to general labels
+                if is_composed_label(l[0]):
+                    add_to_composed_labels(l[0])
+                if not os.path.isfile(label_directory + l[1].lower()):
+                    with open(label_directory + l[1].lower(), "a") as my_file:
+                        my_file.write(l[1].upper() + "\n")
+                        my_file.write(l[0].upper() + "\n")
                 else:
-                    general_labels[label_row.index(l[0])] = l[1]  # add the given label to general labels
-                    if not os.path.isfile(label_directory + l[1].lower()):
-                        with open(label_directory + l[1].lower(), "a") as my_file:
-                            my_file.write(l[1].upper() + "\n")
-                            my_file.write(l[0].upper() + "\n")
-                    else:
-                        with open(label_directory + l[1].lower(), "a") as my_file:
-                            my_file.write(l[0].upper() + "\n")
+                    with open(label_directory + l[1].lower(), "a") as my_file:
+                        my_file.write(l[0].upper() + "\n")
 
         given_label = raw_input('> ')
-    return general_labels
+    return general_label_dict
+
+
+# checks if the given label contains any operators
+def is_composed_label(label):
+    return any(ext in operators for ext in label)
+
+
+# Adds all labels used in a composed label (i.e. using operators) to the composed label dict
+def add_to_composed_labels(composed_label):
+    no_operator_str = composed_label
+    for operator in operators:
+        no_operator_str = no_operator_str.replace(operator, ',')
+    separate_labels = no_operator_str.split(" , ")
+    for label in separate_labels:
+        composed_label_dict[label] = composed_label
 
 
 # searches the known and unknown labels in the initial matrix and uses colors to identify them to the user
@@ -75,28 +94,21 @@ def get_initial_matrix_labels(matrix):
     return label_row
 
 
-# generates a list of general labels from the initial label list
-def get_general_labels(label_row):
-    general_labels = [None] * len(label_row)
-    i = 0
-    for label in label_row:
-        general_label = check_if_known_label(label)
-        if general_label:
-            general_labels[i] = general_label
-        i += 1
-    return general_labels
-
-
 # prints the current label row, inclusive colors (green for known label, red for unknown label)
-def show_labels(label_row, general_labels):
+def show_labels(label_row):
     # Show the user if labels are known or unknown
     labels = '['
     i = 0
     for label in label_row:
-        general_label = general_labels[i]
-        if general_label is None:
+        label = label.upper()
+        if label not in general_label_dict and label not in composed_label_dict:
             labels += bcolors.RED + label + bcolors.ENDC + ', '
         else:
+            if label in composed_label_dict:
+                composed_label = composed_label_dict[label]
+                general_label = general_label_dict[composed_label] + " = " + composed_label
+            else:
+                general_label = general_label_dict[label]
             labels += bcolors.GREEN + label + bcolors.ENDC + ' (' + general_label + ')' + ', '
         i += 1
     labels = labels[:-2]
@@ -104,12 +116,28 @@ def show_labels(label_row, general_labels):
     print labels
 
 
-# Check if the given label is known, if so return the general label, if not return FALSE
-def check_if_known_label(label):
-    label = label.upper()
-    for file_name in os.listdir(label_directory):
-        if label in open(label_directory + file_name).read():
-            return file_name.upper()
-    else:
-        return False
+# shows the general label dictionary
+def show_general_label_dict():
+    print general_label_dict
 
+
+# Check if the given label is known, if so return the general label
+# TODO kan volgens mij wel efficienter
+def add_labels_to_dicts(label_row):
+    for label in label_row:
+        add_label_to_dict(label.upper())
+
+
+# searches for the label in the file and adds it to the correct dictionaries
+def add_label_to_dict(label):
+    for file_name in os.listdir(label_directory):
+            with open(label_directory + file_name) as f:
+                for line in f:
+                    if label in line:
+                        if label == line[:-1]:
+                            general_label_dict[label] = file_name.upper()
+                            return
+                        else:
+                            general_label_dict[line[:-1]] = file_name.upper()
+                            composed_label_dict[label] = line[:-1]
+                            return

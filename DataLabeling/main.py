@@ -18,7 +18,8 @@ from user_interaction import start_interaction
 # Then using the interaction of the user, but automated as much as possible, labels will be identified
 def start_process():
     # ask for filename to process
-    user_input = raw_input('Give csv name (type \'all\' if you want to process all in csvs folder, or type done: ')
+    user_input = "crime.csv"
+    # user_input =  raw_input('Give csv name (type \'all\' if you want to process all in csvs folder, or type done: ')
     print_welcome = True
     while not user_input == 'done':
         file_name = csv_directory + user_input
@@ -28,11 +29,11 @@ def start_process():
                 print 'Result: ' + str(process_csv(csv_directory + f, print_welcome))
                 print_welcome = False
         # warn about an incorrect filename
-        elif not os.path.isfile(csv_directory + file_name):
+        elif not os.path.isfile(file_name):
             print 'incorrect filename, please try again'
         # read one file
         else:
-            print 'Result: ' + str(process_csv(csv_directory + file_name, print_welcome))
+            print 'Result: ' + str(process_csv(file_name, print_welcome))
         user_input = raw_input('Give csv name: ')
         print_welcome = False
 
@@ -44,8 +45,9 @@ def start_process():
 def process_csv(f, print_welcome):
     m = pandas.read_csv(f, sep=',')
     print '\nCurrently processing: ' + f + '\n'
-    result = start_interaction(m, print_welcome)
-    convert(m, result)
+    general_label_dict = start_interaction(m, print_welcome)
+    convert(m, general_label_dict)
+    # TODO return the result so it can be printed in start_process method
 
 
 # Searches for a possible set of labels. These labels can be in the first five rows, or in the first five columns
@@ -56,20 +58,18 @@ def transform_matrix(matrix):
 
 # Initial labels are replaced by their general labels, if the general label is 'None' the column will be thrown away.
 # Here sums etc are also calculated if the label contains an operator
-def convert(matrix, result):
-    # Count the number of non 'None' labels
-    nr_of_labels = 0
-    for label in result:
-        if label is not None:
-            nr_of_labels += 1
+def convert(matrix, general_label_dict):
+    print general_label_dict
 
     # initialize the resulting matrix
     # TODO
+    #index = get_years(matrix)
+    #columns =
 
     # copy data to correct columns
     # TODO
-    for label in result:
-        labels = label.split('operator')  # TODO generic operator
+    for key in general_label_dict.keys():
+        labels = key.split('operator')  # TODO generic operator
         column_result = matrix.iloc(labels[0])
         i = 1
         while i < len(labels):
@@ -88,7 +88,4 @@ def convert(matrix, result):
             i += 2
 
 
-
-
-
-process_csv()
+start_process()

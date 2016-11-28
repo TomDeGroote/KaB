@@ -11,7 +11,9 @@ def print_help():
           '     - show initial :\n' \
           '         shows the initial labels\n' \
           '     - show general :\n' \
-          '         shows the current general labels\n' \
+          '         shows the general labels\n' \
+          '     - show composed :\n' \
+          '         shows the composed labels (i.e. the labels with an operator)\n' \
           '     - show labels :\n' \
           '         shows the current labels, green labels have a known label category, red ones don\'t'
 
@@ -30,7 +32,7 @@ def show_invalid_command():
     print 'Not a valid command.'
 
 
-def remove_label(general, label):
+def remove_label(label, general):
     print 'not implemented yet'
 
 
