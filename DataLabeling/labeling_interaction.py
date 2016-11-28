@@ -4,6 +4,7 @@ from vars import label_directory, operators
 from commands import *
 
 # TODO als optie toevoegen ongekende labels toe te voegen
+# TODO show that multiple general labels are coupled to one
 
 general_label_dict = {}
 composed_label_dict = {}
@@ -36,7 +37,11 @@ def start_interaction(matrix, print_welcome):
             try:
                 rest = given_label.split(' ', 1)[1]
                 if first_word == 'remove':
-                    remove_label(rest)
+                    rest = rest.upper()
+                    if is_composed_label(rest):
+                        del composed_label_dict[general_label_dict[rest]]
+                    del general_label_dict[rest]
+
                 elif first_word == 'show':
                     if rest == 'initial':
                         show_labels(initial_label_row)
@@ -54,16 +59,18 @@ def start_interaction(matrix, print_welcome):
                     l = given_label.split(' = ')
                     # Add the label to the general labels and to the matching label file
                     # TODO checken of wel valid labels?
-                    general_label_dict[l[0]] = l[1].upper()  # add the given label to general labels
-                    if is_composed_label(l[0]):
-                        add_to_composed_labels(l[0])
-                    if not os.path.isfile(label_directory + l[1].lower()):
-                        with open(label_directory + l[1].lower(), "a") as my_file:
-                            my_file.write(l[1].upper() + "\n")
-                            my_file.write(l[0].upper() + "\n")
+                    general_label = l[1].upper()
+                    label = l[0].upper()
+                    general_label_dict[label] = general_label  # add the given label to general labels
+                    if is_composed_label(label):
+                        add_to_composed_labels(label)
+                    if not os.path.isfile(label_directory + general_label.lower()):
+                        with open(label_directory + general_label.lower(), "a") as my_file:
+                            my_file.write(general_label + "\n")
+                            my_file.write(label + "\n")
                     else:
-                        with open(label_directory + l[1].lower(), "a") as my_file:
-                            my_file.write(l[0].upper() + "\n")
+                        with open(label_directory + general_label.lower(), "a") as my_file:
+                            my_file.write(label.upper() + "\n")
             except IndexError:
                 show_invalid_command()
 
@@ -78,7 +85,6 @@ def is_composed_label(label):
 
 # Adds all labels used in a composed label (i.e. using operators) to the composed label dict
 def add_to_composed_labels(composed_label):
-    # TODO split with regex
     no_operator_str = composed_label
     for operator in operators:
         no_operator_str = no_operator_str.replace(operator, ',')
