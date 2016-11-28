@@ -32,7 +32,8 @@ def show_invalid_command():
     print 'Not a valid command.'
 
 
-def remove_label(label, general):
+def remove_label(label):
+    print label
     print 'not implemented yet'
 
 

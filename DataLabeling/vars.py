@@ -6,3 +6,4 @@ label_directory = ROOT_DIR + "/labels/"
 format_directory = ROOT_DIR + "/formats/"
 operators = ["+", "-", "*", "/"]
 operators_regex = ' + | - | * | / '
+percent_to_be_float = 30

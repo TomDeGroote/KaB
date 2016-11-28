@@ -4,7 +4,6 @@ from vars import label_directory, operators
 from commands import *
 
 # TODO als optie toevoegen ongekende labels toe te voegen
-# TODO operators enablen
 
 general_label_dict = {}
 composed_label_dict = {}
@@ -32,42 +31,41 @@ def start_interaction(matrix, print_welcome):
         if given_label == 'help':
             print_help()
         else:
-            # Check if the label assignment format is used ( there is a = in it)
-            l = given_label.split(' = ')
-            if len(l) < 2:
-                l = given_label.split(' ')
-
-                if len(l) < 2:
-                    show_invalid_command()
-                elif l[0] == 'remove':
-                    remove_label(l[1], l[2])
-                elif l[0] == 'show':
-                    if l[1] == 'initial':
+            # retrieve the first word of the command and check if it has a coupled command
+            first_word = given_label.partition(' ')[0]
+            try:
+                rest = given_label.split(' ', 1)[1]
+                if first_word == 'remove':
+                    remove_label(rest)
+                elif first_word == 'show':
+                    if rest == 'initial':
                         show_labels(initial_label_row)
-                    elif l[1] == 'labels':
+                    elif rest == 'labels':
                         show_labels(label_row)
-                    elif l[1] == 'general':
+                    elif rest == 'general':
                         show_general_label_dict()
-                    elif l[1] == 'composed':
+                    elif rest == 'composed':
                         print composed_label_dict
                     else:
                         show_invalid_command()
-                elif l[0] == 'format':
-                    add_label_format(l[1], l[2])
-
-            else:
-                # Add the label to the general labels and to the matching label file
-                # TODO checken of wel valid labels?
-                general_label_dict[l[0]] = l[1].upper()  # add the given label to general labels
-                if is_composed_label(l[0]):
-                    add_to_composed_labels(l[0])
-                if not os.path.isfile(label_directory + l[1].lower()):
-                    with open(label_directory + l[1].lower(), "a") as my_file:
-                        my_file.write(l[1].upper() + "\n")
-                        my_file.write(l[0].upper() + "\n")
+                elif first_word == 'format':
+                    add_label_format(1, 2)  # TODO
                 else:
-                    with open(label_directory + l[1].lower(), "a") as my_file:
-                        my_file.write(l[0].upper() + "\n")
+                    l = given_label.split(' = ')
+                    # Add the label to the general labels and to the matching label file
+                    # TODO checken of wel valid labels?
+                    general_label_dict[l[0]] = l[1].upper()  # add the given label to general labels
+                    if is_composed_label(l[0]):
+                        add_to_composed_labels(l[0])
+                    if not os.path.isfile(label_directory + l[1].lower()):
+                        with open(label_directory + l[1].lower(), "a") as my_file:
+                            my_file.write(l[1].upper() + "\n")
+                            my_file.write(l[0].upper() + "\n")
+                    else:
+                        with open(label_directory + l[1].lower(), "a") as my_file:
+                            my_file.write(l[0].upper() + "\n")
+            except IndexError:
+                show_invalid_command()
 
         given_label = raw_input('> ')
     return general_label_dict
