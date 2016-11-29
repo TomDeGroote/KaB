@@ -5,13 +5,11 @@ import numpy as np
 import re
 from labeling_interaction import start_interaction
 
+# TODO Ignored labels onthouden en in de toekomst ook negeren
+# TODO pijlte naar boven = previous command
+# TODO allow spaces in file name
+# TODO sum monthly data to yearly
 
-# TODO wat als labels de rijen zijn en niet de kolommen => transpose, maar hoe herkennen
-# (gebruiker laten identificeren) en of zelf proberen
-# TODO wat als file start op een andere lijn
-# TODO als gebruiker start en geen extra parameters doorstuurt en er wordt niets herkend, vraag de gebruiker dan
-# TODO argumenten toelaten (label start, label kolom/rij, vraag geen labels, voeg alle ongekende labels toe)
-# in meer detail over de situatie van de file
 
 # goes through the csv processing process.
 # Starts by asking the csv name
@@ -19,8 +17,22 @@ from labeling_interaction import start_interaction
 # Then using the interaction of the user, but automated as much as possible, labels will be identified
 def start_process():
     # ask for filename to process
-    user_input = "minWage.csv"
-    # user_input =  raw_input('Give csv name (type \'all\' if you want to process all in csvs folder, or type done: ')
+    # TODO implement deze shit
+    print 'Type the filename of the csv you want to process. Type all if you want to process all csvs in folder.\n' \
+          'You can also add arguments after the filename: \n' \
+          '     - labels=LOCATION : this tells us where the labels are\n' \
+          '             example LOCATION:   column 1 (Tells us the labels are on the first column\n' \
+          '                                 row 4 (Tells us the labels start on the forth row.\n' \
+          '                                 multi 1 2 (Tells us you are using a multi label e.g. geo\\time, that' \
+          'starts on the first row, second column\n' \
+          '     - automate=add_all : no questions will be asked to you, unless no labels at all are found, all labels' \
+          'that are not known general labels yet, will be added as a general label (caution, may be inaccurate)\n' \
+          '     - automate=add_none : no questions will be asked to you, unless no labels at all are found, none of ' \
+          'the labels will be added to the general labels\n' \
+          '     - split=location_time : will split your files by location and time, the result will be a set of csvs' \
+          'that contain one country per csv, the same categories in every csv, sorted by year' \
+          '     - remember : remembers the labels you ignored and ignores them in the future as well'
+    user_input = raw_input('> ')
     print_welcome = True
     while not user_input == 'done':
         file_name = csv_directory + user_input
@@ -36,13 +48,14 @@ def start_process():
         else:
             result = str(process_csv(file_name, print_welcome))
             write_results(result)
-        user_input = 'done'  # raw_input('Give csv name: ')
+        user_input = raw_input('\nEnter filename and possible arguments: \n > ')
         print_welcome = False
 
     print 'Thank you for using the tool, hope you enjoyed it!'
 
 
 def write_results(result):
+    print 'Result: '
     print result
     print 'Result writing not implemented yet'
     # if LOCATION_VAR:
@@ -54,7 +67,6 @@ def process_csv(f, print_welcome):
     m = pandas.read_csv(f, sep=',')
     print '\nCurrently processing: ' + f + '\n'
     m = transform_matrix(m)
-    print m
     correct_types(m)
     create_uppercase_column_labels(m)
     general_label_dict = start_interaction(m, print_welcome)
@@ -66,6 +78,7 @@ def process_csv(f, print_welcome):
 def create_uppercase_column_labels(m):
     uppercase_columns = ['']*len(m.columns)
     for i, column in enumerate(m.columns):
+        column = str(column)
         uppercase_columns[i] = column.upper()
     m.columns = uppercase_columns
 
@@ -95,29 +108,29 @@ def transform_matrix(matrix):
                 had_multilabel = True
     labels_1 = matrix[matrix.columns[0]][1:]
 
-    clean_first_column = []
-    for l in labels_1:
-        clean_first_column += [l]*len(labels_2)
-    clean_first_column = np.asarray(clean_first_column).transpose()
-
-    clean_second_column = []
-    for _ in labels_1:
-        for l in labels_2:
-            clean_second_column += [l]
-    clean_second_column = np.asarray(clean_second_column).transpose()
-
-    index = np.arange(len(clean_first_column))
-    m = pandas.DataFrame(np.nan, index=index, columns=[label_1, label_2, value_label])
-    m[label_1] = clean_first_column
-    m[label_2] = clean_second_column
-    del matrix[matrix.columns[0]]
-    matrix = matrix.drop(matrix.index[[range(1)]])
-    for i, row in matrix.iterrows():
-        for j, element in enumerate(row.values):
-            nr = (i-2)*(len(labels_2)) + j
-            m.set_value(nr, value_label, convert_to_float(element))
-
     if had_multilabel:
+        clean_first_column = []
+        for l in labels_1:
+            clean_first_column += [l]*len(labels_2)
+        clean_first_column = np.asarray(clean_first_column).transpose()
+
+        clean_second_column = []
+        for _ in labels_1:
+            for l in labels_2:
+                clean_second_column += [l]
+        clean_second_column = np.asarray(clean_second_column).transpose()
+
+        index = np.arange(len(clean_first_column))
+        m = pandas.DataFrame(np.nan, index=index, columns=[label_1, label_2, value_label])
+        m[label_1] = clean_first_column
+        m[label_2] = clean_second_column
+        del matrix[matrix.columns[0]]
+        matrix = matrix.drop(matrix.index[[range(1)]])
+        for i, row in matrix.iterrows():
+            for j, element in enumerate(row.values):
+                nr = (i-2)*(len(labels_2)) + j
+                m.set_value(nr, value_label, convert_to_float(element))
+
         return m
 
     # Search best label row or column
@@ -164,12 +177,12 @@ def transform_matrix(matrix):
             matrix.columns = possible_labels_row
             matrix = matrix.drop(matrix.index[[range(i_row + 1)]])
 
-    print matrix
     return matrix
 
 
 # Checks if the label could be a multi label e.g. geo\time
 def is_multi_label(label):
+    label = str(label)
     labels = re.split(multi_label_splitters, label)
     if len(labels) == 2:
         if is_label(labels[0]) and is_label(labels[1]):
@@ -191,6 +204,7 @@ def are_labels(possible_labels):
 
 # Checks if a given possible label is an actual known general label
 def is_label(possible_label):
+    possible_label = str(possible_label)
     if possible_label == '':
         return False
     for file_name in os.listdir(label_directory):
@@ -203,7 +217,6 @@ def is_label(possible_label):
 
 # Makes correct types of matrix, i.e. 20,001.5 is replaced by 20001.5, ; or : become NaN, dates become dates.
 def correct_types(matrix):
-    print 'Starting type corrections...'
     for column in matrix:
         if matrix[column].dtype == 'object':
             count = 0
@@ -221,6 +234,7 @@ def correct_types(matrix):
 #   - If after the conversion the values are still not of the float type, NaN will be put instead
 def clean_numbers(matrix, column):
     for i, value in enumerate(matrix[column].values):
+        value = str(value)
         value = value.replace(',', '')
         value = value.replace(' ', '')
         value = value.replace(':', '')
@@ -238,6 +252,7 @@ def convert_to_float(value):
         return float(value)
     else:
         return np.nan
+
 
 # Checks whether or not a given string is a int
 def is_int(string):
@@ -260,7 +275,6 @@ def is_float(string):
 # Initial labels are replaced by their general labels, if the general label is 'None' the column will be thrown away.
 # Here sums etc are also calculated if the label contains an operator
 def convert(matrix, general_label_dict):
-    print matrix.dtypes
     # initialize the resulting matrix
     index = matrix.index  # TODO make index the date?
     columns = sorted(general_label_dict.values())

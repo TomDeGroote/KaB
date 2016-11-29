@@ -5,6 +5,8 @@ from commands import *
 
 # TODO als optie toevoegen ongekende labels toe te voegen
 # TODO show that multiple general labels are coupled to one
+# TODO als sum ofzo in label en er bestaat een deel niet van, gebruik dan ook niet als voorstel
+# TODO remove voor composed kapot
 
 general_label_dict = {}
 composed_label_dict = {}
@@ -39,6 +41,8 @@ def start_interaction(matrix, print_welcome):
                 if first_word == 'remove':
                     rest = rest.upper()
                     if is_composed_label(rest):
+                        print composed_label_dict
+                        print general_label_dict[rest]
                         del composed_label_dict[general_label_dict[rest]]
                     del general_label_dict[rest]
 
@@ -127,7 +131,6 @@ def show_general_label_dict():
 
 
 # Check if the given label is known, if so return the general label
-# TODO kan volgens mij wel efficienter
 def add_labels_to_dicts(label_row):
     for label in label_row:
         add_label_to_dict(label.upper())
