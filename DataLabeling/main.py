@@ -43,7 +43,8 @@ def start_process():
 
 
 def write_results(result):
-    print 'not implemented yet'
+    print result
+    print 'Result writing not implemented yet'
     # if LOCATION_VAR:
 
 
@@ -147,6 +148,15 @@ def clean_numbers(matrix, column):
     matrix[column] = pandas.to_numeric(matrix[column], errors='coerce')
 
 
+# Checks whether or not a given string is a int
+def is_int(string):
+    try:
+        int(string)
+        return True
+    except ValueError:
+        return False
+
+
 # Checks whether or not a given string is a float
 def is_float(string):
     try:
@@ -155,10 +165,10 @@ def is_float(string):
     except ValueError:
         return False
 
-
 # Initial labels are replaced by their general labels, if the general label is 'None' the column will be thrown away.
 # Here sums etc are also calculated if the label contains an operator
 def convert(matrix, general_label_dict):
+    print matrix.dtypes
     # initialize the resulting matrix
     index = matrix.index  # TODO make index the date?
     columns = sorted(general_label_dict.values())
@@ -168,26 +178,48 @@ def convert(matrix, general_label_dict):
     for key in general_label_dict.keys():
         labels = re.split(operators_regex, key)
         column_result = matrix[labels[0]].copy()  # select first column of possibly composed columns
-        i = 1
-        while i+1 < len(labels):
-            label_part = labels[i+1]
-            operator = labels[i]
-            if operator == '+':
-                column_result += matrix[label_part]
-            elif operator == '-':
-                column_result -= matrix[label_part]
-            elif operator == '*':
-                column_result *= matrix[label_part]
-            elif operator == '/':
-                column_result /= matrix[label_part]
-            else:
-                print 'Error during conversion: invalid operator'  # TODO hoe nu verder?
-            i += 2
+        # if columns consist of numbers, all operators are possible
+        if labels_represent_number(labels[1::2]):
+            i = 1
+            while i+1 < len(labels):
+                label_part = labels[i+1]
+                operator = labels[i]
+                if operator == '+':
+                        column_result += matrix[label_part]
+                elif operator == '-':
+                    column_result -= matrix[label_part]
+                elif operator == '*':
+                    column_result *= matrix[label_part]
+                elif operator == '/':
+                    column_result /= matrix[label_part]
+                else:
+                    print 'Error during conversion: invalid operator'  # TODO hoe nu verder?
+                i += 2
+        # if columns are strings, concatenate with a space in between
+        else:
+            i = 1
+            while i + 1 < len(labels):
+                spaces_column = [' ']*len(column_result)
+                label_part = labels[i + 1]
+                operator = labels[i]
+                if operator == '+':
+                    column_result += spaces_column + matrix[label_part]
+                else:
+                    print 'Error during conversion: invalid operator'  # TODO hoe nu verder?
+                i += 2
 
         general_label = general_label_dict[key]
         result[general_label] = column_result
 
     return result
+
+
+# Checks if all given labels are numbers
+def labels_represent_number(labels):
+    for label in labels:
+        if not is_float(label) and not is_int(label):
+            return False
+    return True
 
 
 start_process()
