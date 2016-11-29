@@ -34,11 +34,17 @@ def start_process():
             print 'incorrect filename, please try again'
         # read one file
         else:
-            print 'Result:\n' + str(process_csv(file_name, print_welcome))
+            result = str(process_csv(file_name, print_welcome))
+            write_results(result)
         user_input = 'done'  # raw_input('Give csv name: ')
         print_welcome = False
 
     print 'Thank you for using the tool, hope you enjoyed it!'
+
+
+def write_results(result):
+    print 'not implemented yet'
+    # if LOCATION_VAR:
 
 
 # reads the given csv file into a pandas matrix and starts the user interaction
@@ -46,7 +52,7 @@ def start_process():
 def process_csv(f, print_welcome):
     m = pandas.read_csv(f, sep=',')
     print '\nCurrently processing: ' + f + '\n'
-    transform_matrix(m)
+    # transform_matrix(m)
     correct_types(m)
     create_uppercase_column_labels(m)
     general_label_dict = start_interaction(m, print_welcome)
@@ -65,8 +71,53 @@ def create_uppercase_column_labels(m):
 # Searches for a possible set of labels. These labels can be in the first five rows, or in the first five columns
 # If no labels are found, an error message is print, and the user is asked to manually reconfigure the csv
 def transform_matrix(matrix):
+    # Check if current column labels are labels, if so, do nothing
+    possible_labels = matrix.columns
 
-    print 'transformation not implemented yet'
+    if not are_labels(possible_labels):
+        # Check if one of the first few rows is the label row
+        for i, row in matrix.iterrows():
+            # If the row you are checking has an index higher than the allowed, skip the rest of the rows
+            if i > number_of_rows_to_check:
+                break
+            # if the i'th row is a label row, remove the first i rows and make the i'th row the column labels
+            possible_labels = row.values
+            if are_labels(possible_labels):
+                matrix = matrix.drop(matrix.index[[range(i+1)]])
+                matrix.columns = possible_labels
+                print matrix
+                return
+        for i, column in enumerate(matrix.columns[:number_of_columns_to_check]):
+            print matrix[column]
+            # if the i'th column is a label column, transpose and
+            # remove the first i rows and make the i'th row the column labels
+            if are_labels(matrix[column]):
+                matrix = matrix.transpose
+                print matrix
+                return
+    else:
+        print 'labels found ' + str(possible_labels)
+
+
+# Checks if the given array are possible labels
+# To be identified as labels, at least 10% of the given labels need to be actual labels
+def are_labels(possible_labels):
+    number_of_labels = len(possible_labels)
+    counter = 0
+    for possible_label in possible_labels:
+        if is_label(possible_label):
+            counter += 1
+            if counter*10 > number_of_labels:
+                return True
+
+
+# Checks if a given possible label is an actual known general label
+def is_label(possible_label):
+    for file_name in os.listdir(label_directory):
+        with open(label_directory + file_name) as f:
+            for line in f:
+                if str(possible_label) in line:
+                        return True
 
 
 # Makes correct types of matrix, i.e. 20,001.5 is replaced by 20001.5, ; or : become NaN, dates become dates.
