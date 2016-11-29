@@ -19,7 +19,7 @@ from labeling_interaction import start_interaction
 # Then using the interaction of the user, but automated as much as possible, labels will be identified
 def start_process():
     # ask for filename to process
-    user_input = "crime.csv"
+    user_input = "minWage.csv"
     # user_input =  raw_input('Give csv name (type \'all\' if you want to process all in csvs folder, or type done: ')
     print_welcome = True
     while not user_input == 'done':
@@ -53,7 +53,8 @@ def write_results(result):
 def process_csv(f, print_welcome):
     m = pandas.read_csv(f, sep=',')
     print '\nCurrently processing: ' + f + '\n'
-    # transform_matrix(m)
+    m = transform_matrix(m)
+    print m
     correct_types(m)
     create_uppercase_column_labels(m)
     general_label_dict = start_interaction(m, print_welcome)
@@ -72,32 +73,109 @@ def create_uppercase_column_labels(m):
 # Searches for a possible set of labels. These labels can be in the first five rows, or in the first five columns
 # If no labels are found, an error message is print, and the user is asked to manually reconfigure the csv
 def transform_matrix(matrix):
-    # Check if current column labels are labels, if so, do nothing
-    possible_labels = matrix.columns
-
-    if not are_labels(possible_labels):
-        # Check if one of the first few rows is the label row
-        for i, row in matrix.iterrows():
-            # If the row you are checking has an index higher than the allowed, skip the rest of the rows
-            if i > number_of_rows_to_check:
-                break
-            # if the i'th row is a label row, remove the first i rows and make the i'th row the column labels
-            possible_labels = row.values
-            if are_labels(possible_labels):
-                matrix = matrix.drop(matrix.index[[range(i+1)]])
-                matrix.columns = possible_labels
-                print matrix
-                return
-        for i, column in enumerate(matrix.columns[:number_of_columns_to_check]):
-            print matrix[column]
-            # if the i'th column is a label column, transpose and
-            # remove the first i rows and make the i'th row the column labels
-            if are_labels(matrix[column]):
-                matrix = matrix.transpose
-                print matrix
-                return
+    # Search if there is a single cell label
+    labels = is_multi_label(matrix.columns[0])
+    labels_1 = None
+    labels_2 = None
+    label_1 = None
+    label_2 = None
+    had_multilabel = False
+    if labels:
+        label_1 = labels[0]
+        label_2 = labels[1]
+        had_multilabel = True
     else:
-        print 'labels found ' + str(possible_labels)
+        for i, label in enumerate(matrix[matrix.columns[0]]):
+            labels = is_multi_label(label)
+            if labels:
+                label_1 = labels[0]
+                label_2 = labels[1]
+                labels_2 = matrix.iloc[i][1:]
+                matrix = matrix.drop(matrix.index[[range(i)]])
+                had_multilabel = True
+    labels_1 = matrix[matrix.columns[0]][1:]
+
+    clean_first_column = []
+    for l in labels_1:
+        clean_first_column += [l]*len(labels_2)
+    clean_first_column = np.asarray(clean_first_column).transpose()
+
+    clean_second_column = []
+    for _ in labels_1:
+        for l in labels_2:
+            clean_second_column += [l]
+    clean_second_column = np.asarray(clean_second_column).transpose()
+
+    index = np.arange(len(clean_first_column))
+    m = pandas.DataFrame(np.nan, index=index, columns=[label_1, label_2, value_label])
+    m[label_1] = clean_first_column
+    m[label_2] = clean_second_column
+    del matrix[matrix.columns[0]]
+    matrix = matrix.drop(matrix.index[[range(1)]])
+    for i, row in matrix.iterrows():
+        for j, element in enumerate(row.values):
+            nr = (i-2)*(len(labels_2)) + j
+            m.set_value(nr, value_label, convert_to_float(element))
+
+    if had_multilabel:
+        return m
+
+    # Search best label row or column
+    # Check if current column labels are labels, if so, do nothing
+    possible_labels_row = matrix.columns
+    possible_labels_row_nr = are_labels(possible_labels_row)
+    i_row = 'index'
+
+    # Search for the best row for representing labels
+    for i, row in matrix.iterrows():
+        # If the row you are checking has an index higher than the allowed, skip the rest of the rows
+        if i > number_of_rows_to_check:
+            break
+        # if the i'th row is a label row, remove the first i rows and make the i'th row the column labels
+        new_possible_labels = row.values
+        new_nr = are_labels(new_possible_labels)
+
+        if new_nr > possible_labels_row_nr:
+            possible_labels_row = new_possible_labels
+            possible_labels_row_nr = new_nr
+            i_row = i
+            # matrix = matrix.drop(matrix.index[[range(i+1)]])
+            # matrix.columns = possible_labels
+
+    # search for the best column to represent labels
+    possible_labels_column = None
+    possible_labels_column_nr = 0
+    i_column = 0
+    for i, column in enumerate(matrix.columns[:number_of_columns_to_check]):
+        new_possible_labels = matrix[column]
+        new_nr = are_labels(new_possible_labels)
+        if new_nr > possible_labels_column_nr:
+            possible_labels_column = new_possible_labels
+            possible_labels_column_nr = new_nr
+            i_column = i
+
+    if possible_labels_column_nr > possible_labels_row_nr:
+        # The given column has the most likely hood of being the label representation
+        matrix = matrix.transpose()
+        matrix.columns = possible_labels_column
+        matrix = matrix.drop(matrix.index[[range(i_column + 1)]])
+    else:
+        if not i_row == 'index':
+            matrix.columns = possible_labels_row
+            matrix = matrix.drop(matrix.index[[range(i_row + 1)]])
+
+    print matrix
+    return matrix
+
+
+# Checks if the label could be a multi label e.g. geo\time
+def is_multi_label(label):
+    labels = re.split(multi_label_splitters, label)
+    if len(labels) == 2:
+        if is_label(labels[0]) and is_label(labels[1]):
+            return [labels[0], labels[1]]
+    else:
+        return False
 
 
 # Checks if the given array are possible labels
@@ -108,17 +186,19 @@ def are_labels(possible_labels):
     for possible_label in possible_labels:
         if is_label(possible_label):
             counter += 1
-            if counter*10 > number_of_labels:
-                return True
+    return counter*100/number_of_labels
 
 
 # Checks if a given possible label is an actual known general label
 def is_label(possible_label):
+    if possible_label == '':
+        return False
     for file_name in os.listdir(label_directory):
         with open(label_directory + file_name) as f:
             for line in f:
-                if str(possible_label) in line:
+                if str(possible_label.upper()) in line:
                         return True
+    return False
 
 
 # Makes correct types of matrix, i.e. 20,001.5 is replaced by 20001.5, ; or : become NaN, dates become dates.
@@ -148,6 +228,17 @@ def clean_numbers(matrix, column):
     matrix[column] = pandas.to_numeric(matrix[column], errors='coerce')
 
 
+def convert_to_float(value):
+    value = str(value)
+    value = value.replace(',', '')
+    value = value.replace(' ', '')
+    value = value.replace(':', '')
+    value = value.replace(';', '')
+    if is_float(value):
+        return float(value)
+    else:
+        return np.nan
+
 # Checks whether or not a given string is a int
 def is_int(string):
     try:
@@ -164,6 +255,7 @@ def is_float(string):
         return True
     except ValueError:
         return False
+
 
 # Initial labels are replaced by their general labels, if the general label is 'None' the column will be thrown away.
 # Here sums etc are also calculated if the label contains an operator
