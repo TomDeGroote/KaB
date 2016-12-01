@@ -6,9 +6,11 @@ import re
 from labeling_interaction import start_interaction
 
 # TODO Ignored labels onthouden en in de toekomst ook negeren
-# TODO pijlte naar boven = previous command
+# TODO pijlte naar boven = previous commandresult
 # TODO allow spaces in file name
 # TODO sum monthly data to yearly
+# TODO allow folder
+# TODO na drops moet je index aanpassen he slimme
 
 
 # goes through the csv processing process.
@@ -20,38 +22,79 @@ def start_process():
     # TODO implement deze shit
     print 'Type the filename of the csv you want to process. Type all if you want to process all csvs in folder.\n' \
           'You can also add arguments after the filename: \n' \
-          '     - labels=LOCATION : this tells us where the labels are\n' \
+          '     - labels= LOCATION : this tells us where the labels are\n' \
           '             example LOCATION:   column 1 (Tells us the labels are on the first column\n' \
           '                                 row 4 (Tells us the labels start on the forth row.\n' \
           '                                 multi 1 2 (Tells us you are using a multi label e.g. geo\\time, that' \
           'starts on the first row, second column\n' \
-          '     - automate=add_all : no questions will be asked to you, unless no labels at all are found, all labels' \
+          '     - automate= add_all : no questions will be asked to you, unless no labels at all are found, all labels' \
           'that are not known general labels yet, will be added as a general label (caution, may be inaccurate)\n' \
-          '     - automate=add_none : no questions will be asked to you, unless no labels at all are found, none of ' \
+          '     - automate= add_none : no questions will be asked to you, unless no labels at all are found, none of ' \
           'the labels will be added to the general labels\n' \
-          '     - split=location_time : will split your files by location and time, the result will be a set of csvs' \
+          '     - split= boolean : will split your files by location and time, the result will be a set of csvs' \
           'that contain one country per csv, the same categories in every csv, sorted by year' \
-          '     - remember : remembers the labels you ignored and ignores them in the future as well'
-    user_input = raw_input('> ')
+          '     - remember= boolean : remembers the labels you ignored and ignores them in the future as well'
+    user_input = 'crime.csv'  # raw_input('> ')
     print_welcome = True
     while not user_input == 'done':
-        file_name = csv_directory + user_input
+        split = user_input.split('.csv ')
+        file_name = csv_directory + split[0]
+        args = []
+        if len(split) > 1:
+            file_name += '.csv'
+            args = split[1].split(' ')
+        location, automate, split, remember = process_arguments(args)
         # read all files in the csv directory
         if user_input == 'all':
             for f in os.listdir(csv_directory):
-                print 'Result: ' + str(process_csv(csv_directory + f, print_welcome))
+                result = str(process_csv(csv_directory + f, print_welcome, location, automate, split, remember))
                 print_welcome = False
+                write_results(result)
         # warn about an incorrect filename
         elif not os.path.isfile(file_name):
             print 'incorrect filename, please try again'
         # read one file
         else:
-            result = str(process_csv(file_name, print_welcome))
+            result = str(process_csv(file_name, print_welcome, location, automate, split, remember))
             write_results(result)
-        user_input = raw_input('\nEnter filename and possible arguments: \n > ')
+        user_input = 'done'  # raw_input('\nEnter filename and possible arguments: \n > ')
         print_welcome = False
 
     print 'Thank you for using the tool, hope you enjoyed it!'
+
+
+# Processes a list of arguments to the location, automate, split and remember arguments needed to process the csv
+def process_arguments(args):
+    location = None
+    automate = None
+    split = False
+    remember = False
+    i = 0
+    while i < len(args):
+        # labels argument, identify the location
+        if args[i] == 'labels=':
+            if args[i+1] == 'multi':
+                location = ['multi', int(args[i+2]), int(args[i+3])]
+                i += 3
+            else:
+                location = [args[i+1], int(args[i+2])]
+                i += 2
+        # automate argument, identify type of automation
+        elif args[i] == 'automate=':
+            automate = args[i+1]
+            i += 1
+        # split argument, identify if user wants to split or not
+        elif args[i] == 'split=':
+            split = args[i+1].lower() == 'true'
+            i += 1
+        # remember argument, identify if user wants to remember ignored or not
+        elif args[i] == 'remember=':
+            remember = args[i+1].lower() == 'true'
+            i += 1
+        else:
+            print 'Invalid argument ignored.'
+        i += 1
+    return location, automate, split, remember
 
 
 def write_results(result):
@@ -63,10 +106,10 @@ def write_results(result):
 
 # reads the given csv file into a pandas matrix and starts the user interaction
 # When the interaction is finished, the general labels are returned.
-def process_csv(f, print_welcome):
+def process_csv(f, print_welcome, location, automate, split, remember):
     m = pandas.read_csv(f, sep=',')
     print '\nCurrently processing: ' + f + '\n'
-    m = transform_matrix(m)
+    m = transform_matrix(m, location)
     correct_types(m)
     create_uppercase_column_labels(m)
     general_label_dict = start_interaction(m, print_welcome)
@@ -85,29 +128,73 @@ def create_uppercase_column_labels(m):
 
 # Searches for a possible set of labels. These labels can be in the first five rows, or in the first five columns
 # If no labels are found, an error message is print, and the user is asked to manually reconfigure the csv
-def transform_matrix(matrix):
-    # Search if there is a single cell label
-    labels = is_multi_label(matrix.columns[0])
-    labels_1 = None
-    labels_2 = None
-    label_1 = None
-    label_2 = None
+# TODO methode needs cleaning, lelijkste methode ooit :/
+def transform_matrix(matrix, location):
     had_multilabel = False
-    if labels:
-        label_1 = labels[0]
-        label_2 = labels[1]
-        had_multilabel = True
+    # user specified some location for the labels
+    if location is not None:
+        if location[0] == 'multi':
+            row_index = location[1]
+            column_index = location[2]
+            if not row_index == 0:
+                matrix.columns = list(matrix.loc[[row_index-1]].values)
+                matrix = matrix.drop(matrix.index[[range(row_index)]])
+            if not column_index == 0:
+                for i in range(column_index):
+                    del matrix[matrix.columns[0]]
+            labels = is_multi_label(matrix.columns[0])
+            labels_1 = matrix[matrix.columns[0]].values
+            labels_2 = matrix.columns[1:]
+            label_1 = labels[0]
+            label_2 = labels[1]
+            had_multilabel = True
+        elif location[0] == 'column':
+            matrix.loc[-1] = matrix.columns
+            matrix.index += 1  # shifting index
+            matrix = matrix.sort_index()  # sorting by index
+            column_index = location[1]
+            labels = matrix[matrix.columns[column_index]].values
+            matrix = matrix.transpose()
+            matrix.columns = labels
+            index = range(len(matrix[matrix.columns[0]].values))
+            matrix.index = index
+            matrix = matrix.drop(matrix.index[[range(column_index+1)]])
+            return matrix
+        elif location[0] == 'row':
+            # TODO werkt het wel?
+            row_index = location[1]
+            if row_index == 0:
+                return matrix
+            row_index -= 1
+            labels = matrix.iloc[row_index].values
+            matrix.columns = labels
+            index = range(len(matrix[matrix.columns[0]].values))
+            matrix.index = index
+            matrix = matrix.drop(matrix.index[[range(row_index + 1)]])
+            return matrix
     else:
-        for i, label in enumerate(matrix[matrix.columns[0]]):
-            labels = is_multi_label(label)
-            if labels:
-                label_1 = labels[0]
-                label_2 = labels[1]
-                labels_2 = matrix.iloc[i][1:]
-                matrix = matrix.drop(matrix.index[[range(i)]])
-                had_multilabel = True
-    labels_1 = matrix[matrix.columns[0]][1:]
+        # Search if there is a single cell label
+        labels = is_multi_label(matrix.columns[0])
+        labels_1 = None
+        labels_2 = None
+        label_1 = None
+        label_2 = None
+        if labels:
+            label_1 = labels[0]
+            label_2 = labels[1]
+            had_multilabel = True
+        else:
+            for i, label in enumerate(matrix[matrix.columns[0]]):
+                labels = is_multi_label(label)
+                if labels:
+                    label_1 = labels[0]
+                    label_2 = labels[1]
+                    labels_2 = matrix.iloc[i][1:]
+                    matrix = matrix.drop(matrix.index[[range(i)]])
+                    had_multilabel = True
+        labels_1 = matrix[matrix.columns[0]][1:]
 
+    # if a multi-label was found, then transform the matrix
     if had_multilabel:
         clean_first_column = []
         for l in labels_1:
@@ -218,14 +305,13 @@ def is_label(possible_label):
 # Makes correct types of matrix, i.e. 20,001.5 is replaced by 20001.5, ; or : become NaN, dates become dates.
 def correct_types(matrix):
     for column in matrix:
-        if matrix[column].dtype == 'object':
-            count = 0
-            total = len(matrix[column].values)
-            for value in matrix[column].values:
-                if is_float(value):
-                    count += 1
-            if count*100/total > percent_to_be_float:
-                clean_numbers(matrix, column)
+        count = 0
+        total = len(matrix[column].values)
+        for value in matrix[column].values:
+            if is_float(value):
+                count += 1
+        if count*100/total > percent_to_be_float:
+            clean_numbers(matrix, column)
 
 
 # Given a matrix and a column identifier, the column will be cleaned:
@@ -239,6 +325,7 @@ def clean_numbers(matrix, column):
         value = value.replace(' ', '')
         value = value.replace(':', '')
         value = value.replace(';', '')
+        matrix.set_value(i, column, value)
     matrix[column] = pandas.to_numeric(matrix[column], errors='coerce')
 
 
@@ -268,7 +355,7 @@ def is_float(string):
     try:
         float(string)
         return True
-    except ValueError:
+    except (ValueError, TypeError) as e:
         return False
 
 
