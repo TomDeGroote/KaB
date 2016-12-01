@@ -6,7 +6,7 @@ import re
 from labeling_interaction import start_interaction
 
 # TODO Ignored labels onthouden en in de toekomst ook negeren
-# TODO pijlte naar boven = previous commandresult
+# TODO pijlte naar boven = previous command result
 # TODO allow spaces in file name
 # TODO sum monthly data to yearly
 # TODO allow folder
@@ -19,7 +19,7 @@ from labeling_interaction import start_interaction
 # Then using the interaction of the user, but automated as much as possible, labels will be identified
 def start_process():
     # ask for filename to process
-    # TODO implement deze shit
+    # TODO automate, split, remember
     print 'Type the filename of the csv you want to process. Type all if you want to process all csvs in folder.\n' \
           'You can also add arguments after the filename: \n' \
           '     - labels= LOCATION : this tells us where the labels are\n' \
@@ -27,7 +27,7 @@ def start_process():
           '                                 row 4 (Tells us the labels start on the forth row.\n' \
           '                                 multi 1 2 (Tells us you are using a multi label e.g. geo\\time, that' \
           'starts on the first row, second column\n' \
-          '     - automate= add_all : no questions will be asked to you, unless no labels at all are found, all labels' \
+          '     - automate= add_all : no questions will be asked to you, unless no labels at all are found, all labels'\
           'that are not known general labels yet, will be added as a general label (caution, may be inaccurate)\n' \
           '     - automate= add_none : no questions will be asked to you, unless no labels at all are found, none of ' \
           'the labels will be added to the general labels\n' \
